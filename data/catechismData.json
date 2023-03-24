@@ -1,0 +1,782 @@
+[
+  {
+    "part": 1,
+    "question": "What is our only hope in life and death?",
+    "answer": {
+      "adult": "That we are not our own but belong, body and soul, both in life and death, to God and to our Savior Jesus Christ.",
+      "children": "That we are not our own but belong to God."
+    },
+    "commentary": "Q1",
+    "song": "Q1",
+    "prayer": "<p>Christ Our Hope, in life and in death, we cast ourselves on your merciful, fatherly care. You love us because we are your own. We have no good apart from you, and we could ask for no greater gift than to belong to you. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For none of us lives to himself, and none of us dies to himself. For if we live, we live to the Lord, and if we die, we die to the Lord. So then, whether we live or whether we die, we are the Lordâ€™s.</p>",
+      "verseLocation": "Romans 14:7â€“8"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What is God?",
+    "answer": {
+      "adult": "God is the creator and sustainer of everyone and everything. He is eternal, infinite, and unchangeable in his power and perfection, goodness and glory, wisdom, justice, and truth. Nothing happens except through him and by hisÂ will.",
+      "children": "God is the creator of everyone and everything."
+    },
+    "commentary": "Q2",
+    "song": "Q2",
+    "prayer": "<p>Our Creator and Sustainer, everything holds together in you. The smallest creature is known to you, and the mightiest army is at your command. You rule with justice. Help us to trust your goodness in all that you will. Amen.</p>",
+    "verse": {
+      "verseText": "<p class='poetry'>There is none like you among the gods, OÂ Lord,</p><p class='poetry indent'>nor are there any works like yours.</p><p class='poetry'>All the nations you have made shall come</p><p class='poetry indent'>and worship before you, OÂ Lord,</p><p class='poetry'>and shall glorify yourÂ name.</p><p class='poetry indent'>For you are great and do wondrous things;</p><p class='poetry indent'>you alone are God.Â .Â .Â . </p><p class='poetry'>But you, O Lord, are a God merciful and gracious,</p><p class='poetry indent'>slow to anger and abounding in steadfast love and faithfulness.</p>",
+      "verseLocation": "Psalm 86:8â€“10,Â 15"
+    }
+  },
+  {
+    "part": 1,
+    "question": "How many persons are there in God?",
+    "answer": {
+      "adult": "There are three persons in the one true and living God: the Father, the Son, and the Holy Spirit. They are the same in substance, equal in power and glory.",
+      "children": "There are three persons in one God: the Father, the Son, and the Holy Spirit."
+    },
+    "commentary": "Q3",
+    "song": "Q3",
+    "prayer": "<p>Father, Son, and Spirit, you are beyond our understanding. Thank you for bringing us into your love, a love that existed before the world in your three perfect persons. Amen.</p>",
+    "verse": {
+      "verseText": "<p>The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.</p>",
+      "verseLocation": "2Â CorinthiansÂ 13:14"
+    }
+  },
+  {
+    "part": 1,
+    "question": "How and why did God createÂ us?",
+    "answer": {
+      "adult": "God created us male and female in his own image to know him, love him, live with him, and glorify him. And it is right that we who were created by God should live to his glory.",
+      "children": "God created us male and female in his own image to glorify him."
+    },
+    "commentary": "Q4",
+    "song": "Q4-5",
+    "prayer": "<p>Maker of All, let us not lose sight that we, and every human being you have made, are created in your image. Never let us doubt this about ourselves. Never let us doubt this about any other man or woman, for to do so denies you the glory that is due to your name. Your likeness glimpsed in us testifies that we belong to you, body and soul. Amen.</p>",
+    "verse": {
+      "verseText": "<p class='poetry'>So God created man in his own image,</p><p class='poetry indent'>in the image of God he created him;</p><p class='poetry indent'>male and female he createdÂ them.</p>",
+      "verseLocation": "Genesis 1:27"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What else did God create?",
+    "answer": {
+      "adult": "God created all things by his powerful Word, and all his creation was very good; everything flourished under his lovingÂ rule.",
+      "children": "God created all things and all his creation was very good."
+    },
+    "commentary": "Q5",
+    "song": "Q4-5",
+    "prayer": "<p>Lord Who Spoke the World into Existence, we marvel at your creation, even though it has been corrupted. Your beauty is revealed in the splendor of the stars. Your might is shown forth in the strength of a hurricane. Your order is displayed in the laws of mathematics. Let everything that has breath praise the Lord for the works of his hands! Amen.</p>",
+    "verse": {
+      "verseText": "<p>And God saw everything that he had made, and behold, it was very good.Â .Â .Â . </p>",
+      "verseLocation": "Genesis 1:31"
+    }
+  },
+  {
+    "part": 1,
+    "question": "How can we glorify God?",
+    "answer": {
+      "adult": "We glorify God by enjoying him, loving him, trusting him, and by obeying his will, commands, and law.",
+      "children": "By loving him and by obeying his commands and law."
+    },
+    "commentary": "Q6",
+    "song": "Q6",
+    "prayer": "<p>Gracious Lord, we want to fully know and enjoy you. Open our eyes to see you as you are that we might trust you and long with all we are to keep your commands. Whether through small kindnesses or great courage, may each act of obedience bring you glory. Amen.</p>",
+    "verse": {
+      "verseText": "<p>You shall therefore love the <span class='small-caps'>Lord</span> your God and keep his charge, his statutes, his rules, and his commandments always.</p>",
+      "verseLocation": "Deuteronomy 11:1"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What does the law of God require?",
+    "answer": {
+      "adult": "Personal, perfect, and perpetual obedience; that we love God with all our heart, soul, mind, and strength; and love our neighbor as ourselves. What God forbids should never be done and what God commands should always beÂ done.",
+      "children": "That we love God with all our heart, soul, mind, and strength; and love our neighbor as ourselves."
+    },
+    "commentary": "Q7",
+    "song": "Q7",
+    "prayer": "<p>Great Law-Giver, you have spoken a perfect law, and you deserve perfect obedience. Let us not merely think that your law requires outward submission; it demands the full assent of our minds and our hearts. Who is equal to such a task? We confess that we fall far short of keeping your law. Amen.</p>",
+    "verse": {
+      "verseText": "<p>And [Jesus] said to him, â€œYou shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.â€</p>",
+      "verseLocation": "Matthew 22: 37-40"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What is the law of God stated in the Ten Commandments?",
+    "answer": {
+      "adult": "You shall have no other gods before me. You shall not make for yourself an idol in the form of anything in heaven above or on the earth beneath or in the waters belowâ€”you shall not bow down to them or worship them. You shall not misuse the name of the <span class='small-caps'>Lord</span> your God. Remember the Sabbath day by keeping it holy. Honor your father and your mother. You shall not murder. You shall not commit adultery. You shall not steal. You shall not give false testimony. You shall not covet.",
+      "children": "You shall have no other gods before me. You shall not make for yourself an idol. You shall not misuse the name of the <span class='small-caps'>Lord</span> your God. Remember the Sabbath day by keeping it holy. Honor your father and your mother. You shall not murder. You shall not commit adultery. You shall not steal. You shall not give false testimony. You shall not covet."
+    },
+    "commentary": "Q8",
+    "song": "Q8",
+    "prayer": "<p>Holy God, you showed your love to your people by giving them your commands. May we always give thanks for your law. You have not left us ignorant of how to walk in the way of righteousness. Help us to glorify you by obeying your Ten Commandments. Amen.</p>",
+    "verse": {
+      "verseText": "<p>You shall have no other gods beforeÂ me.</p>",
+      "verseLocation": "Exodus 20:3"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What does God require in the first, second, and third commandments?",
+    "answer": {
+      "adult": "First, that we know and trust God as the only true and living God. Second, that we avoid all idolatry and do not worship God improperly. Third, that we treat Godâ€™s name with fear and reverence, honoring also his Word and works.",
+      "children": "First, that we know God as the only true God. Second, that we avoid all idolatry. Third, that we treat Godâ€™s name with fear and reverence."
+    },
+    "commentary": "Q9",
+    "song": "Q9-12",
+    "prayer": "<p>One and Only God, your name is above all names, and we come before you in reverence and fear. Keep us true to your commandments. Reveal to us any false gods in our lives. Let us worship you alone in spirit and truth. Amen.</p>",
+    "verse": {
+      "verseText": "<p>It is the <span class='small-caps'>Lord</span> your God you shall fear. Him you shall serve and by his name you shall swear. You shall not go after other gods, the gods of the peoples who are around you.</p>",
+      "verseLocation": "Deuteronomy 6:13â€“14"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What does God require in the fourth and fifth commandments?",
+    "answer": {
+      "adult": "Fourth, that on the Sabbath day we spend time in public and private worship of God, rest from routine employment, serve the Lord and others, and so anticipate the eternal Sabbath. Fifth, that we love and honor our father and our mother, submitting to their godly discipline and direction.",
+      "children": "Fourth, that on the Sabbath day we spend time in worship of God. Fifth, that we love and honor our father and our mother."
+    },
+    "commentary": "Q10",
+    "song": "Q9-12",
+    "prayer": "<p>Life-Giving Father, we will flourish only when we walk in your ways. You have made us, and you tell us we need rest. Keep us from justifying ourselves through ceaseless work. Give us humility to honor our parents. May we always live by your commands rather than by our own instincts. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Every one of you shall revere his mother and his father, and you shall keep my Sabbaths: I am the <span class='small-caps'>Lord</span> your God.</p>",
+      "verseLocation": "Leviticus 19:3"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What does God require in the sixth, seventh, and eighth commandments?",
+    "answer": {
+      "adult": "Sixth, that we do not hurt, or hate, or be hostile to our neighbor, but be patient and peaceful, pursuing even our enemies with love. Seventh, that we abstain from sexual immorality and live purely and faithfully, whether in marriage or in single life, avoiding all impure actions, looks, words, thoughts, or desires, and whatever might lead to them. Eighth, that we do not take without permission that which belongs to someone else, nor withhold any good from someone we might benefit.",
+      "children": "Sixth, that we do not hurt or hate our neighbor. Seventh, that we live purely and faithfully. Eighth, that we do not take without permission that which belongs to someone else."
+    },
+    "commentary": "Q11",
+    "song": "Q9-12",
+    "prayer": "<p>Faithful Shepherd of Our Souls, you created us to live in love and fellowship on the earth, but we fail in that again and again. May your love rule every relationship so that we walk in purity, putting away lust, covetousness, and greed, for your nameâ€™s sake. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For the commandments, â€œYou shall not commit adultery, You shall not murder, You shall not steal, You shall not covet,â€ and any other commandment, are summed up in this word: â€œYou shall love your neighbor as yourself.â€</p>",
+      "verseLocation": "Romans 13:9"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What does God require in the ninth and tenth commandments?",
+    "answer": {
+      "adult": "Ninth, that we do not lie or deceive, but speak the truth in love. Tenth, that we are content, not envying anyone or resenting what God has given them orÂ us.",
+      "children": "Ninth, that we do not lie or deceive. Tenth, that we are content, not envying anyone."
+    },
+    "commentary": "Q12",
+    "song": "Q9-12",
+    "prayer": "<p>Lord of All Truth, help us to reflect your goodness in word and deed. You know all things. Nothing is hidden from you. You give good gifts and withhold no good thing from your children. May your truth be on our lips and contentment be in our hearts. Amen.</p>",
+    "verse": {
+      "verseText": "<p>If you really fulfill the royal law according to the Scripture, â€œYou shall love your neighbor as yourself,â€ you are doingÂ well.</p>",
+      "verseLocation": "James 2:8"
+    }
+  },
+  {
+    "part": 1,
+    "question": "Can anyone keep the law of God perfectly?",
+    "answer": {
+      "adult": "Since the fall, no mere human has been able to keep the law of God perfectly, but consistently breaks it in thought, word, andÂ deed.",
+      "children": "Since the fall, no human has been able to keep the law of God perfectly."
+    },
+    "commentary": "Q13",
+    "song": "Q13",
+    "prayer": "<p>Holy God, left to our own devices, we transgress your law at every turn. We have no defense, but must plead guilty before your throne of judgment. Your law condemns us and cuts through our pretensions to righteousness, convincing us that we desperately need a Savior. Amen.</p>",
+    "verse": {
+      "verseText": "<p class='poetry'>None is righteous, no, not one;</p><p class='poetry indent'>no one understands;</p><p class='poetry indent'>no one seeks for God.</p><p class='poetry'>All have turned aside; together they have become worthless;</p><p class='poetry indent'>no one doesÂ good,</p><p class='poetry indent'>not even one.</p>",
+      "verseLocation": "Romans 3:10â€“12"
+    }
+  },
+  {
+    "part": 1,
+    "question": "Did God create us unable to keep his law?",
+    "answer": {
+      "adult": "No, but because of the disobedience of our first parents, Adam and Eve, all of creation is fallen; we are all born in sin and guilt, corrupt in our nature and unable to keep Godâ€™s law.",
+      "children": "No, but because of the disobedience of Adam and Eve we are all born in sin and guilt, unable to keep Godâ€™s law."
+    },
+    "commentary": "Q14",
+    "song": "Q14",
+    "prayer": "<p>Merciful Lord, we are corrupt in our very natures. We are sons and daughters of the first Adam who desire what you forbid. Give us a new nature through new birth in Christ, the second Adam, that we might be able to keep your law in the power of the Holy Spirit. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Therefore, just as sin came into the world through one man, and death through sin, and so death spread to all men because all sinned.</p>",
+      "verseLocation": "Romans 5:12"
+    }
+  },
+  {
+    "part": 1,
+    "question": "Since no one can keep the law, what is its purpose?",
+    "answer": {
+      "adult": "That we may know the holy nature and will of God, and the sinful nature and disobedience of our hearts; and thus our need of a Savior. The law also teaches and exhorts us to live a life worthy of our Savior.",
+      "children": "That we may know the holy nature of God, and the sinful nature of our hearts; and thus our need of a Savior. "
+    },
+    "commentary": "Q15",
+    "song": "Q15",
+    "prayer": "<p>Giver of All Good Gifts, your law reveals to us what is just. Though it condemns us, through it we know how great is your holiness and how perfect is your Son. Though we fall short, may we always give you thanks and praise for your law and rejoice that we have a Savior. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin.</p>",
+      "verseLocation": "Romans 3:20"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What is sin?",
+    "answer": {
+      "adult": "Sin is rejecting or ignoring God in the world he created, rebelling against him by living without reference to him, not being or doing what he requires in his lawâ€”resulting in our death and the disintegration of all creation.",
+      "children": "Sin is rejecting or ignoring God in the world he created, not being or doing what he requires in his law."
+    },
+    "commentary": "Q16",
+    "song": "Q16-17",
+    "prayer": "<p>Lord of the Universe, all your ways are good. We pursue the way of death when we go our own way. Help us to see sin as the poison it is. Let your law, rather than the spirit of lawlessness, shape our minds and our lives. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness.</p>",
+      "verseLocation": "1 John 3:4"
+    }
+  },
+  {
+    "part": 1,
+    "question": "What is idolatry?",
+    "answer": {
+      "adult": "Idolatry is trusting in created things rather than the Creator for our hope and happiness, significance and security.",
+      "children": "Idolatry is trusting in created things rather than the Creator."
+    },
+    "commentary": "Q17",
+    "song": "Q16-17",
+    "prayer": "<p>Creator God, forgive us for worshiping the things you have made. No person or thing should be our hope or our trust. You alone are self-existent and all sufficient. May you be our all in all. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened.Â .Â .Â . They exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator.Â .Â .Â . </p>",
+      "verseLocation": "Romans 1:21 andÂ 25"
+    }
+  },
+  {
+    "part": 1,
+    "question": "Will God allow our disobedience and idolatry to go unpunished?",
+    "answer": {
+      "adult": "No, every sin is against the sovereignty, holiness, and goodness of God, and against his righteous law, and God is righteously angry with our sins and will punish them in his just judgment both in this life, and in the life toÂ come.",
+      "children": "No, God is righteously angry with our sins and will punish them both in this life, and in the life to come."
+    },
+    "commentary": "Q18",
+    "song": "Q18",
+    "prayer": "<p>Righteous Lord, if we think that we are good, we deceive ourselves. We deserve your wrath. We have broken your commands, and we have not loved you with our whole hearts, minds, and strength. We can only plead the righteousness of Christ and ask you to let our punishment fall on him. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience.</p>",
+      "verseLocation": "Ephesians 5:5â€“6"
+    }
+  },
+  {
+    "part": 1,
+    "question": "Is there any way to escape punishment and be brought back into Godâ€™s favor?",
+    "answer": {
+      "adult": "Yes, to satisfy his justice, God himself, out of mere mercy, reconciles us to himself and delivers us from sin and from the punishment for sin, by a Redeemer.",
+      "children": "Yes, God reconciles us to himself by a Redeemer."
+    },
+    "commentary": "Q19",
+    "song": "Q19",
+    "prayer": "<p>O Reconciling One, thank you for making a way for us. You have been perfect, both in justice and in mercy. We accept the salvation we do not deserve. We come before you in the name of Jesus Christ, your beloved Son, trusting in his merits rather than our own. Amen.</p>",
+    "verse": {
+      "verseText": "<p class='poetry'>Yet it was the will of the <span class='small-caps'>Lord</span> to crush him;</p><p class='poetry indent'>he has put him to grief;</p><p class='poetry'>when his soul makes an offering for guilt,</p><p class='poetry indent'>he shall see his offspring; he shall prolong hisÂ days;</p><p class='poetry'>the will of the <span class='small-caps'>Lord</span> shall prosper in hisÂ hand.</p><p class='poetry'>Out of the anguish of his soul he shall see and be satisfied;</p><p class='poetry'>by his knowledge shall the righteous one, my servant,</p><p class='poetry indent'>make many to be accounted righteous,</p><p class='poetry indent'>and he shall bear their iniquities.</p>",
+      "verseLocation": "Isaiah 53:10â€“11"
+    }
+  },
+  {
+    "part": 1,
+    "question": "Who is the Redeemer?",
+    "answer": {
+      "adult": "The only Redeemer is the Lord Jesus Christ, the eternal Son of God, in whom God became man and bore the penalty for sin himself.",
+      "children": "The only Redeemer is the Lord Jesus Christ."
+    },
+    "commentary": "Q20",
+    "song": "Q20",
+    "prayer": "<p>Precious Redeemer, before the world began, you loved us. You gave up your glory to bear our shame. You glorified your Father by obeying him all the way to the cross. You deserve our praise, thanks, and worship. We have no hope but in you. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For there is one God, and there is one mediator between God and men, the man Christ Jesus.</p>",
+      "verseLocation": "1 Timothy 2:5"
+    }
+  },
+  {
+    "part": 2,
+    "question": "What sort of Redeemer is needed to bring us back to God?",
+    "answer": {
+      "adult": "One who is truly human and also truly God.",
+      "children": "One who is truly human and also truly God."
+    },
+    "commentary": "Q21",
+    "song": "Q21",
+    "prayer": "<p>Son of God and Son of Man, for generations you were prophesied. Only One who is both divine and human could live in perfect obedience and be a fitting sacrifice on our behalf. There is no other way to God but by you. Amen.</p>",
+    "verse": {
+      "verseText": "<p class='poetry'>For to us a child isÂ born,</p><p class='poetry indent'>to us a son is given;</p><p class='poetry'>and the government shall be upon his shoulder,</p><p class='poetry indent'>and his name shall be called</p><p class='poetry'>Wonderful Counselor, Mighty God,</p><p class='poetry indent'>Everlasting Father, Prince of Peace.</p>",
+      "verseLocation": "Isaiah 9:6"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Why must the Redeemer be truly human?",
+    "answer": {
+      "adult": "That in human nature he might on our behalf perfectly obey the whole law and suffer the punishment for human sin; and also that he might sympathize with our weaknesses.",
+      "children": "That in human nature he might on our behalf perfectly obey the whole law and suffer the punishment for human sin."
+    },
+    "commentary": "Q22",
+    "song": "Q22-23",
+    "prayer": "<p>Faithful High Priest, you were tempted in every way as we are, yet you remained perfect in your obedience. Thank you that you know our weakness. Keep us from excusing or denying our sinfulness. We joyfully accept your exchange. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Therefore he had to be made like his brothers in every respect, so that he might become a merciful and faithful high priest in the service of God, to make propitiation for the sins of the people.</p>",
+      "verseLocation": "Hebrews 2:17"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Why must the Redeemer be truly God?",
+    "answer": {
+      "adult": "That because of his divine nature his obedience and suffering would be perfect and effective; and also that he would be able to bear the righteous anger of God against sin and yet overcome death.",
+      "children": "That because of his divine nature his obedience and suffering would be perfect and effective."
+    },
+    "commentary": "Q23",
+    "song": "Q22-23",
+    "prayer": "<p>God the Son, because of our sin, we could never bear the wrath of God or overcome death. Only you, the Holy One, could suffer the just punishment for sin and defeat death. Thank you for making a way for us to God, to enjoy him eternally. Amen.</p>",
+    "verse": {
+      "verseText": "<p>God raised him up, loosing the pangs of death, because it was not possible for him to be held byÂ it.</p>",
+      "verseLocation": "Acts 2:24"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Why was it necessary for Christ, the Redeemer, to die?",
+    "answer": {
+      "adult": "Since death is the punishment for sin, Christ died willingly in our place to deliver us from the power and penalty of sin and bring us back to God. By his substitutionary atoning death, he alone redeems us from hell and gains for us forgiveness of sin, righteousness, and everlastingÂ life.",
+      "children": "Christ died willingly in our place to deliver us from the power and penalty of sin and bring us back to God."
+    },
+    "commentary": "Q24",
+    "song": "Q24",
+    "prayer": "<p>Atoning Savior, thank you that you didnâ€™t turn back, but endured all the way to death on the cross, and beyond. Because of your death, we can live eternally. With this knowledge, help us face our own deaths with courage, faith, and hope. Amen.</p>",
+    "verse": {
+      "verseText": "<p>And you, who once were alienated and hostile in mind, doing evil deeds, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him.</p>",
+      "verseLocation": "Colossians 1:21â€“22"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Does Christâ€™s death mean all our sins can be forgiven?",
+    "answer": {
+      "adult": "Yes, because Christâ€™s death on the cross fully paid the penalty for our sin, God graciously imputes Christâ€™s righteousness to us as if it were our own and will remember our sins noÂ more.",
+      "children": "Yes, because Christâ€™s death on the cross fully paid the penalty for our sin, God will remember our sins no more."
+    },
+    "commentary": "Q25",
+    "song": "Q25",
+    "prayer": "<p>Forgiving Father, when we are covered in the righteousness of Christ, you remember our sins no more. You have put them as far as the east is from the west. Help us not to doubt your forgiveness, your mercy, or your love, but come to you boldly as your beloved children. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God.</p>",
+      "verseLocation": "2 Corinthians 5:21"
+    }
+  },
+  {
+    "part": 2,
+    "question": "What else does Christâ€™s death redeem?",
+    "answer": {
+      "adult": "Christâ€™s death is the beginning of the redemption and renewal of every part of fallen creation, as he powerfully directs all things for his own glory and creationâ€™sÂ good.",
+      "children": "Every part of fallen creation."
+    },
+    "commentary": "Q26",
+    "song": "Q26",
+    "prayer": "<p>Creationâ€™s Redeemer, the world will not always be as it is now, fallen and groaning for the fullness of your kingdom. Thank you that, ultimately, you will make all things new. We rejoice that your redemption extends to the world you have made. Amen. </p>",
+    "verse": {
+      "verseText": "<p>For in him all the fullness of God was pleased to dwell, and through him to reconcile to himself all things, whether on earth or in heaven, making peace by the blood of his cross.</p>",
+      "verseLocation": "Colossians 1:19â€“20"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Are all people, just as they were lost through Adam, saved through Christ?",
+    "answer": {
+      "adult": "No, only those who are elected by God and united to Christ by faith. Nevertheless God in his mercy demonstrates common grace even to those who are not elect, by restraining the effects of sin and enabling works of culture for human well-being.",
+      "children": "No, only those who are elected by God and united to Christ by faith."
+    },
+    "commentary": "Q27",
+    "song": "Q27",
+    "prayer": "<p>Sovereign Savior, there is salvation in no one but you, and you save everyone who calls upon your name. We would never have called upon you if you had not brought us from death to life. We do not fully understand your electing love, but we confess that neither we nor anyone else deserves it. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For if, because of one manâ€™s trespass, death reigned through that one man, much more will those who receive the abundance of grace and the free gift of righteousness reign in life through the one man Jesus Christ.</p>",
+      "verseLocation": "Romans 5:17"
+    }
+  },
+  {
+    "part": 2,
+    "question": "What happens after death to those not united to Christ by faith?",
+    "answer": {
+      "adult": "At the day of judgment they will receive the fearful but just sentence of condemnation pronounced against them. They will be cast out from the favorable presence of God, into hell, to be justly and grievously punished, forever.",
+      "children": "They will be cast out from the presence of God, into hell, to be justly punished, forever. "
+    },
+    "commentary": "Q28",
+    "song": "Q28",
+    "prayer": "<p>Judge of All the Earth, we tremble to think of the judgment that awaits all outside your covenant. Before it is too late, may those we love be reconciled to you so that they do not suffer the punishment that is theirs, and would have been ours, apart from you. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God.Â .Â .Â . Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him.</p>",
+      "verseLocation": "John 3:16â€“18, 36"
+    }
+  },
+  {
+    "part": 2,
+    "question": "How can we be saved?",
+    "answer": {
+      "adult": "Only by faith in Jesus Christ and in his substitutionary atoning death on the cross; so even though we are guilty of having disobeyed God and are still inclined to all evil, nevertheless, God, without any merit of our own but only by pure grace, imputes to us the perfect righteousness of Christ when we repent and believe in him.",
+      "children": "Only by faith in Jesus Christ and in his substitutionary atoning death on the cross."
+    },
+    "commentary": "Q29",
+    "song": "Q29",
+    "prayer": "<p>Merciful One, we renounce our pride and all pretensions of self-righteousness, and we come to you in repentance and faith. We trust your death to give us life. We praise you for the gift of salvation. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast.</p>",
+      "verseLocation": "Ephesians 2:8â€“9"
+    }
+  },
+  {
+    "part": 2,
+    "question": "What is faith in Jesus Christ?",
+    "answer": {
+      "adult": "Faith in Jesus Christ is acknowledging the truth of everything that God has revealed in his Word, trusting in him, and also receiving and resting on him alone for salvation as he is offered to us in the gospel.",
+      "children": "Receiving and resting on him alone for salvation as he is offered to us in the gospel."
+    },
+    "commentary": "Q30",
+    "song": "Q30",
+    "prayer": "<p>Author of Our Faith, we believe that you are who you say you are. Your Word is truth, and it reveals you as our only hope of salvation. We believe your promises, walking by faith, not by sight. Amen.</p>",
+    "verse": {
+      "verseText": "<p>I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself forÂ me.</p>",
+      "verseLocation": "Galatians 2:20"
+    }
+  },
+  {
+    "part": 2,
+    "question": "What do we believe by true faith?",
+    "answer": {
+      "adult": "Everything taught to us in the gospel. The Apostlesâ€™ Creed expresses what we believe in these words: We believe in God the Father Almighty, Maker of heaven and earth; and in Jesus Christ his only Son our Lord, who was conceived by the Holy Spirit, born of the virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell. The third day he rose again from the dead. He ascended into heaven, and is seated at the right hand of God the Father Almighty; from there he will come to judge the living and the dead. We believe in the Holy Spirit, the holy catholic church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting.",
+      "children": "We believe in God the Father Almighty, Maker of heaven and earth; and in Jesus Christ his only Son our Lord, who was conceived by the Holy Spirit, born of the virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell. The third day he rose again from the dead. He ascended into heaven, and is seated at the right hand of God the Father Almighty; from there he will come to judge the living and the dead. We believe in the Holy Spirit, the holy catholic church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting."
+    },
+    "commentary": "Q31",
+    "song": "Q31",
+    "prayer": "<p>Maker of Heaven and Earth, make the startling claims of our faith come alive to us. Let us not divorce theological truth from the history of your salvation, which occurred in time and space. Let us not waver in unbelief, but rest our lives upon the truth that you raise the dead. Amen.</p>",
+    "verse": {
+      "verseText": "<p>I found it necessary to write appealing to you to contend for the faith that was once for all delivered to the saints.</p>",
+      "verseLocation": "Jude 3"
+    }
+  },
+  {
+    "part": 2,
+    "question": "What do justification and sanctificationÂ mean?",
+    "answer": {
+      "adult": "Justification means our declared righteousness before God, made possible by Christâ€™s death and resurrection for us. Sanctification means our gradual, growing righteousness, made possible by the Spiritâ€™s work inÂ us.",
+      "children": "Justification means our declared righteousness before God. Sanctification means our gradual, growing righteousness."
+    },
+    "commentary": "Q32",
+    "song": "Q32",
+    "prayer": "<p>Our Savior and Lord, you have completed the work of our justification. You have begun the work of our sanctification, and we trust that you will carry us through to its completion. Transform us day by day into your likeness, conforming us to your ways. Amen.</p>",
+    "verse": {
+      "verseText": "<p>To those who are elect exiles .Â .Â . according to the foreknowledge of God the Father, in the sanctification of the Spirit, for obedience to Jesus Christ and for sprinkling with his blood: May grace and peace be multiplied to you.</p>",
+      "verseLocation": "1 Peter 1:1â€“2"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Should those who have faith in Christ seek their salvation through their own works, or anywhereÂ else?",
+    "answer": {
+      "adult": "No, they should not, as everything necessary to salvation is found in Christ. To seek salvation through good works is a denial that Christ is the only Redeemer and Savior.",
+      "children": "No, everything necessary to salvation is found in Christ."
+    },
+    "commentary": "Q33",
+    "song": "Q33",
+    "prayer": "<p>One and Only God, keep us from trusting in good works or living in such a way that we imply they are the grounds of our salvation. Let us glorify your grace by leaning our whole weight upon it, staking our lives on the promise that you are the beginning and the end of our salvation. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Yet we know that a person is not justified by works of the law but through faith in Jesus Christ, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified.</p>",
+      "verseLocation": "Galatians 2:16"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Since we are redeemed by grace alone, through Christ alone, must we still do good works and obey Godâ€™sÂ Word?",
+    "answer": {
+      "adult": "Yes, because Christ, having redeemed us by his blood, also renews us by his Spirit; so that our lives may show love and gratitude to God; so that we may be assured of our faith by the fruits; and so that by our godly behavior others may be won to Christ.",
+      "children": "Yes, so that our lives may show love and gratitude to God; and so that by our godly behavior others may be won to Christ."
+    },
+    "commentary": "Q34",
+    "song": "Q34",
+    "prayer": "<p>Heavenly Father, you have saved us <em>from</em> sin. Let us not continue in it as if we were still enslaved to it. You have given us commands that are the path of life. Let us treasure those commands. May all who know us see our good works and glorify you because of them. Amen.</p>",
+    "verse": {
+      "verseText": "<p>But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light. Once you were not a people, but now you are Godâ€™s people; once you had not received mercy, but now you have received mercy. Beloved, I urge you as sojourners and exiles to abstain from the passions of the flesh, which wage war against your soul. Keep your conduct among the Gentiles honorable, so that when they speak against you as evildoers, they may see your good deeds and glorify God on the day of visitation.</p>",
+      "verseLocation": "1 Peter 2:9â€“12"
+    }
+  },
+  {
+    "part": 2,
+    "question": "Since we are redeemed by grace alone, through faith alone, where does this faith comeÂ from?",
+    "answer": {
+      "adult": "All the gifts we receive from Christ we receive through the Holy Spirit, including faith itself.",
+      "children": "From the Holy Spirit."
+    },
+    "commentary": "Q35",
+    "song": "Q35",
+    "prayer": "<p>Holy Spirit, you sought us when we could not seek you because we were dead in our trespasses and sins. You are the giver of our faith; none of us would believe apart from your regenerating grace, by which you make hearts of stone into hearts of flesh. Let us put aside all boasting in light of your undeserved mercy. Amen.</p>",
+    "verse": {
+      "verseText": "<p>But when the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit, whom he poured out on us richly through Jesus Christ our Savior.</p>",
+      "verseLocation": "Titus 3:4â€“6"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What do we believe about the Holy Spirit?",
+    "answer": {
+      "adult": "That he is God, coeternal with the Father and the Son, and that God grants him irrevocably to all who believe.",
+      "children": "That he is God, coeternal with the Father and the Son."
+    },
+    "commentary": "Q36",
+    "song": "Q36",
+    "prayer": "<p>God Our Help, we thank you for sending your Spirit to live in us. Thank you that he chastens and disciplines, strengthens and comforts us. Let us live the life of faith in his power, not our own. Let us walk the path of obedience, filled with his joy. Amen.</p>",
+    "verse": {
+      "verseText": "<p>And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you.</p>",
+      "verseLocation": "John 14:16â€“17"
+    }
+  },
+  {
+    "part": 3,
+    "question": "How does the Holy Spirit helpÂ us?",
+    "answer": {
+      "adult": "The Holy Spirit convicts us of our sin, comforts us, guides us, gives us spiritual gifts and the desire to obey God; and he enables us to pray and to understand Godâ€™sÂ Word.",
+      "children": "The Holy Spirit convicts us of our sin, and he enables us to pray and to understand Godâ€™s Word."
+    },
+    "commentary": "Q37",
+    "song": "Q37",
+    "prayer": "<p>God the Spirit, have your way in us. Shine your light on the secret sins of our hearts. Equip us for tasks that are too large for us. Make us glad in what delights you. Intercede for us and open our eyes to rightly understand the Word of truth. Amen.</p>",
+    "verse": {
+      "verseText": "<p>And take the helmet of salvation, and the sword of the Spirit, which is the word of God, praying at all times in the Spirit, with all prayer and supplication. To that end keep alert with all perseverance, making supplication for all the saints.</p>",
+      "verseLocation": "Ephesians 6:17â€“18"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What is prayer?",
+    "answer": {
+      "adult": "Prayer is pouring out our hearts to God in praise, petition, confession of sin, and thanksgiving.",
+      "children": "Prayer is pouring out our hearts to God."
+    },
+    "commentary": "Q38",
+    "song": "Q38",
+    "prayer": "<p>Our Great Refuge, thank you for calling us to prayer. You are not far away; you are near, and you hear us when we pray. Let us pour out our hearts to you without ceasing. Let us pray without guile, bringing our true selves before your throne of grace. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Trust in him at all times, O people; pour out your heart before him; God is a refuge forÂ us.</p>",
+      "verseLocation": "Psalm 62:8"
+    }
+  },
+  {
+    "part": 3,
+    "question": "With what attitude should weÂ pray?",
+    "answer": {
+      "adult": "With love, perseverance, and gratefulness; in humble submission to Godâ€™s will, knowing that, for the sake of Christ, he always hears our prayers.",
+      "children": "With love, perseverance, and gratefulness."
+    },
+    "commentary": "Q39",
+    "song": "Q39",
+    "prayer": "<p>Loving Father, we come to you in the name of your beloved Son. Give us perseverance in prayer, even when we do not immediately see answers. Let us believe that you will not keep back any good thing from us, and trust that you will withhold those things we seek that would harm us. Your ways are higher than our ways, and we entrust our requests to your sovereign kindness. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.</p>",
+      "verseLocation": "Philippians 4:6"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What should weÂ pray?",
+    "answer": {
+      "adult": "The whole Word of God directs and inspires us in what we should pray, including the prayer Jesus himself taughtÂ us.",
+      "children": "The whole Word of God directs us in what we should pray."
+    },
+    "commentary": "Q40",
+    "song": "Q40",
+    "prayer": "<p>God Who Hears, let your living Word shape our desires and our prayers. May it challenge us to pray for things that donâ€™t seem possible. May it inform our view of you as we approach you as beloved sons and daughters. May it drive us to our knees as we recognize our need of you. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For this reason I bow my knees before the Father, from whom every family in heaven and on earth is named, that according to the riches of his glory he may grant you to be strengthened with power through his Spirit in your inner being, so that Christ may dwell in your hearts through faithâ€”that you, being rooted and grounded in love, may have strength to comprehend with all the saints what is the breadth and length and height and depth, and to know the love of Christ that surpasses knowledge, that you may be filled with all the fullness of God.</p><p>Now to him who is able to do far more abundantly than all that we ask or think, according to the power at work within us, to him be glory in the church and in Christ Jesus throughout all generations, forever and ever. Amen.</p>",
+      "verseLocation": "Ephesians 3:14â€“21"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What is the Lordâ€™s Prayer?",
+    "answer": {
+      "adult": "Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as it is in heaven. Give us today our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us fromÂ evil.",
+      "children": "Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as it is in heaven. Give us today our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us fromÂ evil."
+    },
+    "commentary": "Q41",
+    "song": "Q41",
+    "prayer": "<p>Our Father in Heaven, when we pray the prayer that you taught us, keep us from reciting empty words. Let these petitions be the cries of our hearts. Bring your kingdom on earth to us and through us for your great nameâ€™s sake. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Pray then like this: â€œOur Father in heaven, hallowed be your name.Â .Â .Â .â€</p>",
+      "verseLocation": "Matthew 6:9"
+    }
+  },
+  {
+    "part": 3,
+    "question": "How is the Word of God to be read and heard?",
+    "answer": {
+      "adult": "With diligence, preparation, and prayer; so that we may accept it with faith, store it in our hearts, and practice it in our lives.",
+      "children": "With diligence, preparation, and prayer; so that we may accept it with faith and practice it in our lives."
+    },
+    "commentary": "Q42",
+    "song": "Q42",
+    "prayer": "<p>Giver of the Word, help us to treasure your Scriptures as our most precious possession. May it be in our minds and on our lips. Let it transform our thinking and reform our living. Make us attentive students and devoted servants of your perfect Word. Amen.</p>",
+    "verse": {
+      "verseText": "<p>All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every goodÂ work.</p>",
+      "verseLocation": "2 Timothy 3:16â€“17"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What are the sacraments or ordinances?",
+    "answer": {
+      "adult": "The sacraments or ordinances given by God and instituted by Christ, namely baptism and the Lordâ€™s Supper, are visible signs and seals that we are bound together as a community of faith by his death and resurrection. By our use of them the Holy Spirit more fully declares and seals the promises of the gospel toÂ us.",
+      "children": "Baptism and the Lordâ€™s Supper."
+    },
+    "commentary": "Q43",
+    "song": "Q43",
+    "prayer": "<p>Giver of the Gospel, you have given us signs of your grace that can be seen, felt, and tasted. Help us to observe them according to your commands. May they turn our eyes away from ourselves and onto your saving work. Keep us from exalting the signs in any way that distracts us from the Savior to which they point. Amen.</p>",
+    "verse": {
+      "verseText": "<p>We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness ofÂ life.</p><h3>Luke 22:19â€“20</h3><p>And he took bread, and when he had given thanks, he broke it and gave it to them, saying, â€œThis is my body, which is given for you. Do this in remembrance of me.â€ And likewise the cup after they had eaten, saying, â€œThis cup that is poured out for you is the new covenant in my blood.â€</p>",
+      "verseLocation": "Romans 6:4"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What is baptism?",
+    "answer": {
+      "adult": "Baptism is the washing with water in the name of the Father, the Son, and the Holy Spirit; it signifies and seals our adoption into Christ, our cleansing from sin, and our commitment to belong to the Lord and to his church.",
+      "children": "Baptism is the washing with water in the name of the Father, the Son, and the Holy Spirit."
+    },
+    "commentary": "Q44",
+    "song": "Q44",
+    "prayer": "<p>Cleansing One, we cannot purify our own hearts, but must come to you to wash away our sin. Thank you for water baptism, which does not save us but portrays our salvation and unites us as one people, your adopted sons and daughters. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.Â .Â .Â . </p>",
+      "verseLocation": "Matthew 28:19"
+    }
+  },
+  {
+    "part": 3,
+    "question": "Is baptism with water the washing away of sin itself?",
+    "answer": {
+      "adult": "No, only the blood of Christ and the renewal of the Holy Spirit can cleanse us from sin.",
+      "children": "No, only the blood of Christ can cleanse us from sin."
+    },
+    "commentary": "Q45",
+    "song": "Q45",
+    "prayer": "<p>Lamb of God, our baptism is a sign that we are saved not by our own righteousness, but because we have been given the righteousness of Christ. Let us not make baptism the object of our trust, but look instead to the cleansing work of Jesus, beautifully depicted in baptism. Amen.</p>",
+    "verse": {
+      "verseText": "<p>John answered them all, saying, â€œI baptize you with water, but he who is mightier than I is coming, the strap of whose sandals I am not worthy to untie. He will baptize you with the Holy Spirit andÂ fire.â€</p>",
+      "verseLocation": "Luke 3:16"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What is the Lordâ€™s Supper?",
+    "answer": {
+      "adult": "Christ commanded all Christians to eat bread and to drink from the cup in thankful remembrance of him and his death. The Lordâ€™s Supper is a celebration of the presence of God in our midst; bringing us into communion with God and with one another; feeding and nourishing our souls. It also anticipates the day when we will eat and drink with Christ in his Fatherâ€™s kingdom.",
+      "children": "Christ commanded all Christians to eat bread and to drink from the cup in thankful remembrance of him."
+    },
+    "commentary": "Q46",
+    "song": "Q46",
+    "prayer": "<p>Bread of Life, we take the Lordâ€™s Supper in reverent obedience. We do not want to receive it unworthily, so we come in repentance and faith. Help us to forgive the sins of those who have sinned against us, especially the believers with whom we share the bread and the cup. May our partaking of this meal proclaim your saving death and our desperate need of it. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For I received from the Lord what I also delivered to you, that the Lord Jesus on the night when he was betrayed took bread, and when he had given thanks, he broke it, and said, â€œThis is my body which is for you. Do this in remembrance of me.â€ In the same way also he took the cup, after supper, saying, â€œThis cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me.â€ For as often as you eat this bread and drink the cup, you proclaim the Lordâ€™s death until he comes.</p>",
+      "verseLocation": "1 Corinthians 11:23â€“26"
+    }
+  },
+  {
+    "part": 3,
+    "question": "Does the Lordâ€™s Supper add anything to Christâ€™s atoningÂ work?",
+    "answer": {
+      "adult": "No, Christ died once for all. The Lordâ€™s Supper is a covenant meal celebrating Christâ€™s atoning work; as it is also a means of strengthening our faith as we look to him, and a foretaste of the future feast. But those who take part with unrepentant hearts eat and drink judgment on themselves.",
+      "children": "No, Christ died once for all."
+    },
+    "commentary": "Q47",
+    "song": "Q47",
+    "prayer": "<p>Conqueror of Death, we celebrate your finished work when we take the Lordâ€™s Supper. May our eating be a confession of faith, that though we are unworthy, we have been joined together with the worthiness of Christ. May we come to your table with repentant hearts, putting away pride and self-sufficiency, enjoying the free grace you offer to us. Amen.</p>",
+    "verse": {
+      "verseText": "<p>For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God.Â .Â .Â . </p>",
+      "verseLocation": "1 Peter 3:18"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What is the church?",
+    "answer": {
+      "adult": "God chooses and preserves for himself a community elected for eternal life and united by faith, who love, follow, learn from, and worship God together. God sends out this community to proclaim the gospel and prefigure Christâ€™s kingdom by the quality of their life together and their love for one another.",
+      "children": "A community elected for eternal life and united by faith, who love, follow, learn from, and worship God together."
+    },
+    "commentary": "Q48",
+    "song": "Q48",
+    "prayer": "<p>King Over All, you have brought us together as the family of God. Keep us faithful to worship together, to love one another, and to provide for each otherâ€™s needs. Let our fellowship be genuine, and help us to spur one another on in the faith. Amen.</p>",
+    "verse": {
+      "verseText": "<p>But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.</p>",
+      "verseLocation": "2 Thessalonians 2:13"
+    }
+  },
+  {
+    "part": 3,
+    "question": "Where is Christ now?",
+    "answer": {
+      "adult": "Christ rose bodily from the grave on the third day after his death and is seated at the right hand of the Father, ruling his kingdom and interceding for us, until he returns to judge and renew the whole world.",
+      "children": "Christ rose bodily from the grave on the third day after his death and is seated at the right hand of the Father."
+    },
+    "commentary": "Q49",
+    "song": "Q49",
+    "prayer": "<p>Risen and Ascended Lord, though you no longer walk this earth, you rule over us from your throne. All authority and power are in you. Your name is above all names. Raise us up at the last day to live with you in your kingdom. Amen.</p>",
+    "verse": {
+      "verseText": "<p>He raised him from the dead and seated him at his right hand in the heavenly places, far above all rule and authority and power and dominion, and above every name that is named, not only in this age but also in the one toÂ come.</p>",
+      "verseLocation": "Ephesians 1:20â€“21"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What does Christâ€™s resurrection mean forÂ us?",
+    "answer": {
+      "adult": "Christ triumphed over sin and death by being physically resurrected, so that all who trust in him are raised to new life in this world and to everlasting life in the world to come. Just as we will one day be resurrected, so this world will one day be restored. But those who do not trust in Christ will be raised to everlasting death.",
+      "children": "Christ triumphed over sin and death so that all who trust in him are raised to new life in this world and to everlasting life in the world to come."
+    },
+    "commentary": "Q50",
+    "song": "Q50",
+    "prayer": "<p>Resurrecting God, make us mindful that death is not the end for us. Save us from the judgment we deserve, and make us faithful to implore others to flee from the wrath to come. We look in hope to the joy that will be ours when, saved from that wrath through the merits of Christ, we will be clothed with resurrected bodies to reign on a renewed earth. Amen.</p>",
+    "verse": {
+      "verseText": "<p>But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope. For since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep.</p>",
+      "verseLocation": "1 Thessalonians 4:13â€“14"
+    }
+  },
+  {
+    "part": 3,
+    "question": "Of what advantage to us is Christâ€™s ascension?",
+    "answer": {
+      "adult": "Christ physically ascended on our behalf, just as he came down to earth physically on our account, and he is now advocating for us in the presence of his Father, preparing a place for us, and also sends us his Spirit.",
+      "children": "Christ is now advocating for us in the presence of his Father and also sends us his Spirit."
+    },
+    "commentary": "Q51",
+    "song": "Q51",
+    "prayer": "<p>Interceding Savior, you have not stopped showing compassion for your people. You were tempted in every way as we are, and you now intercede for us when we are tempted. Plead for us to your Father, for you are our advocate before the judge of all the earth. Amen.</p>",
+    "verse": {
+      "verseText": "<p>Who is to condemn? Christ Jesus is the one who diedâ€”more than that, who was raisedâ€”who is at the right hand of God, who indeed is interceding forÂ us.</p>",
+      "verseLocation": "Romans 8:34"
+    }
+  },
+  {
+    "part": 3,
+    "question": "What hope does everlasting life hold forÂ us?",
+    "answer": {
+      "adult": "It reminds us that this present fallen world is not all there is; soon we will live with and enjoy God forever in the new city, in the new heaven and the new earth, where we will be fully and forever freed from all sin and will inhabit renewed, resurrection bodies in a renewed, restored creation.",
+      "children": "That we will live with and enjoy God forever in the new heaven and the new earth, where we will be forever freed from all sin in a renewed, restored creation."
+    },
+    "commentary": "Q52",
+    "song": "Q52",
+    "prayer": "<p>Eternal God, we eagerly await the fullness of your kingdom. We long for every tear to be dried. We groan for the day when we no longer struggle against the flesh. Let the sure hope of everlasting life give us courage to face the trials of this life. Amen. Come, Lord Jesus!</p>",
+    "verse": {
+      "verseText": "<p>Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more. And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. And I heard a loud voice from the throne saying, â€œBehold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.â€</p>",
+      "verseLocation": "Revelation 21:1â€“4"
+    }
+  }
+]
