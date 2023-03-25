@@ -89,17 +89,19 @@ const SermonsPage = ({ data }) => {
           <h1>SERMONS</h1>
           <div className='row d-flex justify-content-center'>
             {displaySermons}
-            <ReactPaginate
-              previousLabel={<i className='fa-solid fa-chevrons-left'></i>}
-              nextLabel={<i className='fa-solid fa-chevrons-right'></i>}
-              pageCount={pageCount}
-              onPageChange={changePage}
-              containerClassName={"paginationBtns"}
-              previousLinkClassName={"previousBtn"}
-              nextLinkClassName={"nextBtn"}
-              disabledClassName={"paginationDisabled"}
-              activeClassName={"paginationActive"}
-            />
+            <div className='pagination-container'>
+              <ReactPaginate
+                previousLabel={<i className='fa-solid fa-chevrons-left'></i>}
+                nextLabel={<i className='fa-solid fa-chevrons-right'></i>}
+                pageCount={pageCount}
+                onPageChange={changePage}
+                containerClassName={"paginationBtns"}
+                previousLinkClassName={"previousBtn"}
+                nextLinkClassName={"nextBtn"}
+                disabledClassName={"paginationDisabled"}
+                activeClassName={"paginationActive"}
+              />
+            </div>
           </div>
         </div>
       </span>
