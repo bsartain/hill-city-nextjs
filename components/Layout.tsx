@@ -130,7 +130,14 @@ function Layout({ children, title, meta, data }: Props) {
               : meta.featured_image.large
           }
         />
-        <meta property='og:url' content={`https://hillcitysc.com${router.pathname}`} />
+        <meta
+          property='og:url'
+          content={
+            router.pathname === "/sermons/[sermon]"
+              ? `https://hillcitysc.com/sermons/${router.query.sermon}`
+              : `https://hillcitysc.com${router.pathname}`
+          }
+        />
         <meta property='fb:app_id' content='1004092133118810' />
         <meta
           name='twitter:title'
@@ -152,7 +159,14 @@ function Layout({ children, title, meta, data }: Props) {
               : meta.featured_image.large
           }
         />
-        <meta name='twitter:card' content='https://hillcitysc.com' />
+        <meta
+          name='twitter:card'
+          content={
+            router.pathname === "/sermons/[sermon]"
+              ? `https://hillcitysc.com/sermons/${router.query.sermon}`
+              : `https://hillcitysc.com${router.pathname}`
+          }
+        />
         <link rel='preconnect' href='https://fonts.gstatic.com'></link>
         <script src='https://js.churchcenter.com/modal/v1'></script>
       </Head>
