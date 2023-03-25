@@ -48,7 +48,7 @@ const SmallGroupsPage = ({ data, sermonData }) => {
   };
 
   return (
-    <Layout title='Hill City Church: About Us'>
+    <Layout title='Small Groups' meta={data[0]}>
       {!data
         ? "Loading..."
         : data.map((item, index) => {
