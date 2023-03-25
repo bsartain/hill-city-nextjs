@@ -2,7 +2,7 @@ import React, { ReactNode, useState, useEffect, useContext } from "react";
 import { Store } from "context/context";
 import Link from "next/link";
 import Head from "next/head";
-import { Container, OverlayTrigger, Popover } from "react-bootstrap";
+import { Container, OverlayTrigger, Popover, Modal, Spinner } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useRouter } from "next/router";
@@ -12,6 +12,7 @@ type Props = {
   children?: ReactNode;
   title?: string;
   meta?: any;
+  data?: any;
 };
 
 interface FooterContentModel {
@@ -19,9 +20,22 @@ interface FooterContentModel {
   footer_map: string;
 }
 
-function Layout({ children, title, meta }: Props) {
+function Layout({ children, title, meta, data }: Props) {
+  const [showAnnouncementModal, setShowAnnouncementModal] = useState(false);
   const [show, setShow] = useState(false);
   const [footerContent, setfooterContent] = useState({} as FooterContentModel);
+  const [spinner, setSpinner] = useState({
+    home: false,
+    gospel: false,
+    about: false,
+    faith: false,
+    sermons: false,
+    liveStream: false,
+    devotional: false,
+    contact: false,
+    smallGroups: false,
+    give: false,
+  });
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [fontIconColor, setFontIconColor] = useState({ color: "#ffffff" });
   const [fontColor, setFontColor] = useState("#737373");
@@ -67,6 +81,13 @@ function Layout({ children, title, meta }: Props) {
         });
     }
     getFooterContent();
+
+    const getSpecialAnnouncement = async () => {
+      if (data && data.special_announcement) {
+        setShowAnnouncementModal(true);
+      }
+    };
+    getSpecialAnnouncement();
 
     window.addEventListener("scroll", updateNavbarColor);
     return function cleanup() {
@@ -273,41 +294,89 @@ function Layout({ children, title, meta }: Props) {
           <Offcanvas.Title></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <img src='/images/HC-masthead-logo-white.png' />
+          <Link href='/'>
+            <img src='/images/HC-masthead-logo-white.png' />
+          </Link>
           <div className='nav-links'>
-            <div>
-              <Link href='/'>Home</Link>
+            <div className='link-container'>
+              {spinner.home ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/' onClick={() => setSpinner({ ...spinner, home: true })}>
+                Home
+              </Link>
             </div>
-            <div>
-              <Link href='/gospel'>The Gospel</Link>
+            <div className='link-container'>
+              {spinner.gospel ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/gospel' onClick={() => setSpinner({ ...spinner, gospel: true })}>
+                The Gospel
+              </Link>
             </div>
-            <div>
-              <Link href='/about'>About</Link>
+            <div className='link-container'>
+              {spinner.about ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/about' onClick={() => setSpinner({ ...spinner, about: true })}>
+                About
+              </Link>
             </div>
-            <div>
-              <Link href='/faith'>Our Faith</Link>
+            <div className='link-container'>
+              {spinner.faith ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/faith' onClick={() => setSpinner({ ...spinner, faith: true })}>
+                Our Faith
+              </Link>
             </div>
-            <div>
-              <Link href='/sermons'>Sermons</Link>
+            <div className='link-container'>
+              {spinner.sermons ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/sermons' onClick={() => setSpinner({ ...spinner, sermons: true })}>
+                Sermons
+              </Link>
             </div>
-            <div>
-              <Link href='/live-stream'>Live Stream</Link>
+            <div className='link-container'>
+              {spinner.liveStream ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link
+                href='/live-stream'
+                onClick={() => setSpinner({ ...spinner, liveStream: true })}>
+                Live Stream
+              </Link>
             </div>
-            <div>
-              <Link href='/devotional'>Devotional</Link>
+            <div className='link-container'>
+              {spinner.devotional ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/devotional' onClick={() => setSpinner({ ...spinner, devotional: true })}>
+                Devotional
+              </Link>
             </div>
-            <div>
-              <Link href='/contact'>Service Times/Contact</Link>
+            <div className='link-container'>
+              {spinner.contact ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/contact' onClick={() => setSpinner({ ...spinner, contact: true })}>
+                Service Times/Contact
+              </Link>
             </div>
-            <div>
-              <Link href='/small-groups'>Small Groups</Link>
+            <div className='link-container'>
+              {spinner.smallGroups ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link
+                href='/small-groups'
+                onClick={() => setSpinner({ ...spinner, smallGroups: true })}>
+                Small Groups
+              </Link>
             </div>
-            <div>
-              <Link href='/give'>Give</Link>
+            <div className='link-container'>
+              {spinner.give ? <Spinner animation='border' className='nav-spinner' /> : null}
+              <Link href='/give' onClick={() => setSpinner({ ...spinner, give: true })}>
+                Give
+              </Link>
             </div>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
+      <Modal show={showAnnouncementModal} onHide={() => setShowAnnouncementModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <h4 className='mt-3'>Special Announcement</h4>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {data && data.special_announcement ? (
+            <div className='p-2' dangerouslySetInnerHTML={{ __html: data.special_announcement }} />
+          ) : null}
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }
