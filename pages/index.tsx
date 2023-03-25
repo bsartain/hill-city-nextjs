@@ -3,6 +3,10 @@ import HomepageHeader from "../components/HomepageHeader";
 
 const IndexPage = (props) => {
   const {
+    acf: { acf },
+  } = props;
+
+  const {
     homePage: {
       acf: { homepage_slides, homepage_excerpt, homepage, homepage_service_times, homepage_map },
     },
@@ -26,7 +30,7 @@ const IndexPage = (props) => {
   };
 
   return (
-    <Layout title=' | Home' meta={meta}>
+    <Layout title='Home' meta={meta} data={acf}>
       <HomepageHeader homepageSlides={homepage_slides} homepageExcerpt={homepage_excerpt} />
       <section className='homepage-section'>
         <div className='container' dangerouslySetInnerHTML={{ __html: homepage_service_times }} />
@@ -87,7 +91,9 @@ export default IndexPage;
 export async function getServerSideProps(context) {
   const homePageData = await fetch("https://hillcitysc.com/wp-json/acf/v3/posts/86");
   const homePageDataJson = await homePageData.json();
+  const orderOfServiceResponse = await fetch("https://hillcitysc.com/wp-json/acf/v3/posts/8857");
+  const jsonOrderOfService = await orderOfServiceResponse.json();
   return {
-    props: { homePage: homePageDataJson },
+    props: { homePage: homePageDataJson, acf: jsonOrderOfService },
   };
 }

@@ -705,6 +705,18 @@ footer {
   }
 }
 
+.link-container {
+  padding: 5px;
+}
+
+.nav-spinner {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-width: 2px !important;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
 .order-of-service-container {
   height: 100%;
   display: contents;
