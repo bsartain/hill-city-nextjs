@@ -116,6 +116,18 @@ h6 {
   color: #000000;
 }
 
+.fa-facebook {
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.fa-youtube {
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
 .layout-container {
   height: 100%;
   color: #737373;
@@ -250,6 +262,19 @@ h6 {
             margin-top: -10px;
             padding: 5px;
             letter-spacing: normal;
+          }
+          .home-excerpt {
+            font-weight: 300;
+            margin-top: -1px;
+            padding: 5px;
+            color: #fff;
+            letter-spacing: 0.4px;
+            font-size: 13px;
+            font-family: "Montserrat", sans-serif !important;
+          }
+          .home-title {
+            font-weight: 100;
+            font-size: 18px;
           }
           .hr-container {
             width: 100%;
