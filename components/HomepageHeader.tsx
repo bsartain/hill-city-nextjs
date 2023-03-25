@@ -1,13 +1,31 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Link from "next/link";
 
 const HomepageHeader: React.FC<{ homepageSlides: Array<object>; homepageExcerpt: string }> = ({
   homepageSlides,
   homepageExcerpt,
 }) => {
+  const setHeaderText = () => {
+    const date = new Date();
+    const day = date.getDay();
+    const hours = date.getHours();
+    if (day === 7 && hours < 12) {
+      return (
+        <div>
+          <h1>JOIN OUR LIVE STREAM</h1>
+          <Link href='/live-stream' className='btn btn-outline-primary'>
+            JOIN LIVESTREAM
+          </Link>
+        </div>
+      );
+    } else {
+      return <h1>WELCOME</h1>;
+    }
+  };
   return (
     <div className='home-header-background-image-container'>
-      <Carousel fade indicators={false}>
+      <Carousel fade indicators={false} controls={false}>
         {!homepageSlides ? (
           <Carousel.Item
             className='header-background-image'
@@ -23,7 +41,7 @@ const HomepageHeader: React.FC<{ homepageSlides: Array<object>; homepageExcerpt:
                     <div className='hr-one' />
                   </div>
                   <h1>JESUS</h1>
-                  <h6>FOLLOWING JESUS FOR THE FLOURISHING OF ROCK HILL.</h6>
+                  <p>FOLLOWING JESUS FOR THE FLOURISHING OF ROCK HILL.</p>
                   <div className='page-header-arrow-home-page'>
                     <i className='now-ui-icons  arrows-1_minimal-down'></i>
                   </div>
@@ -44,12 +62,12 @@ const HomepageHeader: React.FC<{ homepageSlides: Array<object>; homepageExcerpt:
                 <Carousel.Caption>
                   <div className='homepage-carousel-title-container'>
                     <div className='homepage-carousel-header-content'>
-                      <h5>HILL CITY CHURCH</h5>
+                      <h5 className='home-title'>HILL CITY CHURCH</h5>
                       <div className='hr-container'>
                         <div className='hr-one' />
                       </div>
-                      <h1>WELCOME</h1>
-                      <h6>{homepageExcerpt}</h6>
+                      {setHeaderText()}
+                      <p className='home-excerpt'>{homepageExcerpt}</p>
                       <div className='page-header-arrow-home-page'>
                         <i className='now-ui-icons  arrows-1_minimal-down'></i>
                       </div>

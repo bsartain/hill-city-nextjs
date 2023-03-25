@@ -226,6 +226,10 @@ function Layout({ children, title, meta }: Props) {
                     <i className='fa-light fa-font-case' style={fontIconColor}></i>
                   </OverlayTrigger>
                 ) : null}
+                <i
+                  className='fa-brands fa-facebook'
+                  style={fontIconColor}
+                  onClick={() => window.open("https://www.facebook.com/hillcitysc")}></i>
                 <i className='fa-solid fa-bars me-2' onClick={() => handleShow()}></i>
               </Navbar.Text>
             </Navbar.Collapse>
@@ -235,7 +239,21 @@ function Layout({ children, title, meta }: Props) {
       {children}
       <footer className='footer-container'>
         <div className='footer-content-container'>
-          <div dangerouslySetInnerHTML={{ __html: footerContent.footer_content }} />
+          <div>
+            <div dangerouslySetInnerHTML={{ __html: footerContent.footer_content }} />
+            <div style={{ marginTop: "-40px" }}>
+              <i
+                className='fa-brands fa-youtube'
+                style={{ color: "#ffffff" }}
+                onClick={() =>
+                  window.open("https://www.youtube.com/@hillcitychurch7087/streams")
+                }></i>
+              <i
+                className='fa-brands fa-facebook'
+                style={{ color: "#ffffff" }}
+                onClick={() => window.open("https://www.facebook.com/hillcitysc")}></i>
+            </div>
+          </div>
           <div>
             <h1>Map</h1>
             <iframe
