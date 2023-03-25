@@ -14,8 +14,14 @@ type Props = {
   meta?: any;
 };
 
+interface FooterContentModel {
+  footer_content: string;
+  footer_map: string;
+}
+
 function Layout({ children, title, meta }: Props) {
   const [show, setShow] = useState(false);
+  const [footerContent, setfooterContent] = useState({} as FooterContentModel);
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [fontIconColor, setFontIconColor] = useState({ color: "#ffffff" });
   const [fontColor, setFontColor] = useState("#737373");
@@ -50,11 +56,23 @@ function Layout({ children, title, meta }: Props) {
       }
     };
     checkMobileView();
+
+    async function getFooterContent() {
+      fetch("https://hillcitysc.com/wp-json/acf/v3/posts/9262")
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          setfooterContent(data.acf);
+        });
+    }
+    getFooterContent();
+
     window.addEventListener("scroll", updateNavbarColor);
     return function cleanup() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
-  });
+  }, []);
 
   const stripHtml = (string: string) => {
     const strippedHtml = string.replace(/<\/?[^>]+(>|$)/g, "").replace(/\[.*?\]/g, "");
@@ -217,21 +235,11 @@ function Layout({ children, title, meta }: Props) {
       {children}
       <footer className='footer-container'>
         <div className='footer-content-container'>
-          <div>
-            <h1>Gatherings</h1>
-            <h3>Sunday Morning</h3>
-            <p>10:00am</p>
-            <h3 className='mt-3'>Address</h3>
-            <p>
-              Gettys Art Center
-              <br />
-              201 E Main St, Rock Hill, SC 29730
-            </p>
-          </div>
+          <div dangerouslySetInnerHTML={{ __html: footerContent.footer_content }} />
           <div>
             <h1>Map</h1>
             <iframe
-              src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13085.028651345927!2d-81.0256805!3d34.9250869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64f7a6109e565477!2sTom%20S.%20Gettys%20Art%20Center!5e0!3m2!1sen!2sus!4v1654546755146!5m2!1sen!2sus'
+              src={footerContent.footer_map}
               width='100%'
               frameBorder='0'
               style={{ border: "0px" }}></iframe>
