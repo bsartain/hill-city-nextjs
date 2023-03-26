@@ -164,6 +164,12 @@ const OrderOfService = ({ data, orderOfService }) => {
                       .catechism-text{
                         font-size: ${liveStreamPageStyles.fontSize}px             
                       }
+                      .announcements-container p{
+                        font-size: ${liveStreamPageStyles.fontSize}px  
+                      }
+                      .prayer-requests-container p{
+                        font-size: ${liveStreamPageStyles.fontSize}px  
+                      }
                     `}
                   </style>
                   <div className='container mt-5'>
@@ -470,7 +476,7 @@ const OrderOfService = ({ data, orderOfService }) => {
                             ? serviceOrder.announcements.map((item: any, index: number) => {
                                 return (
                                   <>
-                                    <div key={index}>
+                                    <div key={index} className='mt-5 announcement-container'>
                                       <h3>{item.announcement_title}</h3>
                                       <div
                                         dangerouslySetInnerHTML={{
@@ -519,7 +525,7 @@ const OrderOfService = ({ data, orderOfService }) => {
                           ? serviceOrder.prayerRequests.map((item: any, index: number) => {
                               return (
                                 <>
-                                  <div key={index} className='mb-0'>
+                                  <div key={index} className='mb-0 mt-5 prayer-requests-container'>
                                     <h3
                                       style={{ color: "#caac5e", fontSize: "20px" }}
                                       className='mb-0'>
