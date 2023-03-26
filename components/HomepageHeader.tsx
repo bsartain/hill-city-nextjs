@@ -10,7 +10,7 @@ const HomepageHeader: React.FC<{ homepageSlides: Array<object>; homepageExcerpt:
     const date = new Date();
     const day = date.getDay();
     const hours = date.getHours();
-    if (day === 7 && hours < 12) {
+    if (day === 0 && hours < 12) {
       return (
         <div>
           <h1>JOIN OUR LIVE STREAM</h1>
