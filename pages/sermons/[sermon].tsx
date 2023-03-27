@@ -4,7 +4,6 @@ import Layout from "components/Layout";
 import Header from "components/Header";
 import { useRouter } from "next/router";
 import { formatDate, crossway } from "utils";
-import { ga } from "ga";
 
 interface BiblePassageModel {
   passages: Array<string>;
