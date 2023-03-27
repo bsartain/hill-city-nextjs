@@ -44,10 +44,10 @@ const Contact = ({ data, mapAndTimes }) => {
     <Layout title='Contact/Service Times' meta={data[0]}>
       {!data
         ? "Loading..."
-        : data.map((item, index) => {
+        : data.map((item: any, index: number) => {
             return (
-              <>
-                <span key={index}>
+              <span key={index}>
+                <span>
                   <Header data={data} router={router} />
                   <div className='container mt-5' key={index}>
                     <h1>{item.title.rendered}</h1>
@@ -138,7 +138,7 @@ const Contact = ({ data, mapAndTimes }) => {
                         );
                       })}
                 </span>
-              </>
+              </span>
             );
           })}
     </Layout>

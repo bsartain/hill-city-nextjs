@@ -30,7 +30,7 @@ interface ServiceOrderModel {
   prayerRequests: Array<object>;
 }
 
-const OrderOfService = ({ data, orderOfService }) => {
+const LiveStream = ({ data, orderOfService }) => {
   const [serviceOrder, setServiceOrder] = useState({} as ServiceOrderModel);
   const [printLogo, setPrintLogo] = useState(false);
   const [spinner, setSpinner] = useState(false);
@@ -85,7 +85,7 @@ const OrderOfService = ({ data, orderOfService }) => {
       .filter((item: any, index: number) => index + 1 === Number(serviceOrder.catechism))
       .map((item: any, index: number) => {
         return (
-          <div key={serviceOrder.catechism} className='catechism'>
+          <div key={index} className='catechism'>
             <h3 className='mb-0'>Catechism Question {serviceOrder.catechism}</h3>
             <div className='mb-4 catechism-text'>
               All questions are from the{" "}
@@ -288,7 +288,7 @@ const OrderOfService = ({ data, orderOfService }) => {
                               {alert.success ? (
                                 <Alert key={"success"} variant={"success"} className='mt-3'>
                                   Your message was sent successfully. One of our Elders will review
-                                  promptly and get back to you. God bless.
+                                  your message promptly and get back to you. God bless.
                                 </Alert>
                               ) : null}
                               {alert.failed ? (
@@ -475,8 +475,8 @@ const OrderOfService = ({ data, orderOfService }) => {
                           serviceOrder.announcements.length > 0
                             ? serviceOrder.announcements.map((item: any, index: number) => {
                                 return (
-                                  <>
-                                    <div key={index} className='mt-5 announcement-container'>
+                                  <span key={index}>
+                                    <div className='mt-5 announcement-container'>
                                       <h3>{item.announcement_title}</h3>
                                       <div
                                         dangerouslySetInnerHTML={{
@@ -505,7 +505,7 @@ const OrderOfService = ({ data, orderOfService }) => {
                                       </div>
                                     </div>
                                     <div className='divider'></div>
-                                  </>
+                                  </span>
                                 );
                               })
                             : null}
@@ -524,8 +524,8 @@ const OrderOfService = ({ data, orderOfService }) => {
                         serviceOrder.prayerRequests.length > 0
                           ? serviceOrder.prayerRequests.map((item: any, index: number) => {
                               return (
-                                <>
-                                  <div key={index} className='mb-0 mt-5 prayer-requests-container'>
+                                <span key={index}>
+                                  <div className='mb-0 mt-5 prayer-requests-container'>
                                     <h3
                                       style={{ color: "#caac5e", fontSize: "20px" }}
                                       className='mb-0'>
@@ -535,7 +535,7 @@ const OrderOfService = ({ data, orderOfService }) => {
                                     <p>{item.prayer_request}</p>
                                   </div>
                                   <div className='divider'></div>
-                                </>
+                                </span>
                               );
                             })
                           : null}
@@ -550,7 +550,7 @@ const OrderOfService = ({ data, orderOfService }) => {
   );
 };
 
-export default OrderOfService;
+export default LiveStream;
 
 export async function getServerSideProps(context) {
   const response = await fetch("https://hillcitysc.com/wp-json/wp/v2/pages?per_page=50");
