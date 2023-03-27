@@ -53,7 +53,7 @@ const SermonsPage = ({ data }) => {
 
   const routeToSingleSermon = (sermon) => {
     setSingleSermon([sermon]);
-    router.push(`/sermons/${sermon.id}`);
+    router.push(`/sermons/${sermon.slug}`);
   };
 
   const pageCount = Math.ceil(sermons.length / sermonsPerPage);

@@ -4,6 +4,7 @@ import Layout from "components/Layout";
 import Header from "components/Header";
 import { useRouter } from "next/router";
 import { formatDate, crossway } from "utils";
+import { ga } from "ga";
 
 interface BiblePassageModel {
   passages: Array<string>;
@@ -13,7 +14,7 @@ const Sermon = ({ data }) => {
   const [biblePassage, setBiblePassage] = useState({} as BiblePassageModel);
   const { setOpenMediaDrawer, setSingleSermon } = useContext(Store);
   const router = useRouter();
-  const selectedSermon = data.filter((item: any) => item.id === Number(router.query.sermon));
+  const selectedSermon = data.filter((item: any) => item.slug === router.query.sermon);
   useEffect(() => {
     async function getBiblePassage() {
       if (selectedSermon.length > 0) {

@@ -130,7 +130,6 @@ h6 {
 
 .layout-container {
   height: 100%;
-  color: #737373;
   h1,
   h2,
   h3,
@@ -411,8 +410,6 @@ footer {
 }
 
 .devotion-container {
-  font-weight: 300;
-  color: #737373;
   h1,
   h2,
   h3,
@@ -435,6 +432,10 @@ footer {
     border-top: 1px solid #949494;
     width: 40%;
   }
+  line-height: 1.6em;
+  font-weight: 400;
+  font-size: 16px;
+  color: #707070;
 }
 
 .sermon-page-container {
