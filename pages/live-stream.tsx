@@ -288,7 +288,7 @@ const LiveStream = ({ data, orderOfService }) => {
                               {alert.success ? (
                                 <Alert key={"success"} variant={"success"} className='mt-3'>
                                   Your message was sent successfully. One of our Elders will review
-                                  promptly and get back to you. God bless.
+                                  your message promptly and get back to you. God bless.
                                 </Alert>
                               ) : null}
                               {alert.failed ? (
