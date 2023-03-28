@@ -442,6 +442,16 @@ footer {
   display: table;
   flex-wrap: wrap;
   justify-content: center;
+  .sermon-podcast-blurb {
+    text-align: center;
+    margin: 25px 0;
+    .podcast-icons {
+      font-size: 50px;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
   .paginationBtns {
     display: flex;
     list-style: none;
@@ -794,6 +804,22 @@ footer {
   display: none;
 }
 
+.heading-divider {
+  margin: 20px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  .heading-border {
+    border-top: 1px solid #737373;
+    width: 70px;
+  }
+}
+
+.widom-section-container {
+  .wisdom-header {
+    margin: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .title-header-container {
     h1 {
@@ -835,6 +861,17 @@ footer {
   .sermon-page-container {
     .card {
       margin: 0px 0px 20px 0px;
+    }
+    .sermon-podcast-blurb {
+      text-align: center;
+      margin: 10px 0;
+      padding: 25px;
+      .podcast-icons {
+        font-size: 50px;
+        i {
+          margin-right: 10px;
+        }
+      }
     }
   }
   .sermon-details-container {

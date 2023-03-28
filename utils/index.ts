@@ -49,3 +49,11 @@ export const nextSundaysDate = () => {
   const dateString = mm + "/" + dd + "/" + yyyy;
   return dateString;
 };
+
+export const todaysDate = () => {
+  let today: any = new Date();
+  let dd = today.getDate();
+  let mm = today.getMonth() + 1;
+
+  return mm + "/" + dd;
+};

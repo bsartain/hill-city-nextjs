@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import { useRouter } from "next/router";
+import HeadingDivider from "components/HeadingDivider";
 
 const GivePage = ({ data }) => {
   const router = useRouter();
@@ -14,6 +15,7 @@ const GivePage = ({ data }) => {
                 <Header data={data} router={router} />
                 <div className='container mt-5' key={index}>
                   <h1>{item.title.rendered}</h1>
+                  <HeadingDivider />
                   <div dangerouslySetInnerHTML={{ __html: item.content.rendered }} />
                   <a
                     href='https://hillcitysc.churchcenter.com/giving?open-in-church-center-modal=true'

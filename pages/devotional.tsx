@@ -1,10 +1,12 @@
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import spurgeon from "../data/spurgeon.json";
+import wisdom from "data/wisdom.json";
 import { RefTagger } from "react-reftagger";
 import { useRouter } from "next/router";
+import { crossway, todaysDate } from "utils";
 
-const Devotional = ({ data }) => {
+const Devotional = ({ data, psalms, proverbs, ecclesiastes }) => {
   const router = useRouter();
   const setTodaysDevo = () => {
     // eslint-disable-next-line array-callback-return
@@ -29,6 +31,20 @@ const Devotional = ({ data }) => {
     });
   };
 
+  const setWisdomReading = () => {
+    return (
+      <div className='container widom-section-container'>
+        <h1 className='wisdom-header'>Todays Wisdom Meditations</h1>
+        <div className='wisdom-content' dangerouslySetInnerHTML={{ __html: psalms }}></div>
+        <div />
+        <div className='wisdom-content' dangerouslySetInnerHTML={{ __html: proverbs }}></div>
+        <div />
+        <div className='wisdom-content' dangerouslySetInnerHTML={{ __html: ecclesiastes }}></div>
+        <div />
+      </div>
+    );
+  };
+
   const meta = {
     title: {
       rendered: "Charles Spurgeon: Todays Daily Devotional.",
@@ -36,7 +52,7 @@ const Devotional = ({ data }) => {
     better_featured_image: {
       media_details: {
         sizes: {
-          medium: { source_url: "/images/cs.png" },
+          medium: { source_url: "/images/Bible-Open-Coffee-Notes.jpeg" },
         },
       },
     },
@@ -58,6 +74,7 @@ const Devotional = ({ data }) => {
                   <h1>{item.title.rendered}</h1>
                   <div dangerouslySetInnerHTML={{ __html: item.content.rendered }}></div>
                   <div className='devotional-container'>{setTodaysDevo()}</div>
+                  <div className='wisdom-meditations'>{setWisdomReading()}</div>
                 </div>
               </span>
             );
@@ -72,7 +89,16 @@ export async function getServerSideProps(context) {
   const response = await fetch("https://hillcitysc.com/wp-json/wp/v2/pages?per_page=50");
   const json = await response.json();
   const filter = json.filter((item) => item.id === 9196);
+  const todaysDateCurrent: any = await wisdom.filter((item: any) => item.date === todaysDate());
+  const psalms: any = await crossway(todaysDateCurrent[0].psalms);
+  const proverbs: any = await crossway(todaysDateCurrent[0].proverbs);
+  const ecclesiastes: any = await crossway(todaysDateCurrent[0].ecclesiastes);
   return {
-    props: { data: filter },
+    props: {
+      data: filter,
+      psalms: psalms.passages[0],
+      proverbs: proverbs.passages[0],
+      ecclesiastes: ecclesiastes.passages[0],
+    },
   };
 }
