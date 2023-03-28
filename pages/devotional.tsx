@@ -60,7 +60,7 @@ const Devotional = ({ data, psalms, proverbs, ecclesiastes, todaysDevo }) => {
             return (
               <span key={index} className='devotion-container'>
                 <Header data={data} router={router} />
-                <div className='container mt-5' key={index}>
+                <div className='mt-5' key={index}>
                   <h1>{item.title.rendered}</h1>
                   <div dangerouslySetInnerHTML={{ __html: item.content.rendered }}></div>
                   <div className='devotional-container'>{setTodaysDevo()}</div>
