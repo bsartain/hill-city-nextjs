@@ -2,6 +2,7 @@ import Layout from "components/Layout";
 import Header from "components/Header";
 import { useRouter } from "next/router";
 import { RefTagger } from "react-reftagger";
+import HeadingDivider from "components/HeadingDivider";
 
 const FaithPage = ({ data }) => {
   const router = useRouter();
@@ -15,6 +16,7 @@ const FaithPage = ({ data }) => {
                 <Header data={data} router={router} />
                 <div className='container mt-5' key={index}>
                   <h1>{item.title.rendered}</h1>
+                  <HeadingDivider />
                   <RefTagger bibleVersion={"ESV"} />
                   <div dangerouslySetInnerHTML={{ __html: item.content.rendered }}></div>
                 </div>

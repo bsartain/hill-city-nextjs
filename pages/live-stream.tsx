@@ -8,6 +8,7 @@ import { crossway } from "utils";
 import catechism from "data/catechismData.json";
 import { nextSundaysDate } from "utils";
 import ReactToPrint from "react-to-print";
+import HeadingDivider from "components/HeadingDivider";
 
 interface ServiceOrderModel {
   callToWorship: any;
@@ -174,6 +175,7 @@ const LiveStream = ({ data, orderOfService }) => {
                   </style>
                   <div className='container mt-5'>
                     <h1>{item.title.rendered}</h1>
+                    <HeadingDivider />
                     <div className='d-flex justify-content-center mt-5 mb-3'>
                       <h3>WELCOME! OUR SERVICE WILL BEGIN AT 10:00 AM ON {nextSundaysDate()}</h3>
                     </div>

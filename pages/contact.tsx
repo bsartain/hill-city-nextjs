@@ -3,6 +3,7 @@ import Layout from "components/Layout";
 import Header from "components/Header";
 import { useRouter } from "next/router";
 import { Spinner, Alert } from "react-bootstrap";
+import HeadingDivider from "components/HeadingDivider";
 
 const Contact = ({ data, mapAndTimes }) => {
   const [form, setForm] = useState({
@@ -51,6 +52,7 @@ const Contact = ({ data, mapAndTimes }) => {
                   <Header data={data} router={router} />
                   <div className='container mt-5' key={index}>
                     <h1>{item.title.rendered}</h1>
+                    <HeadingDivider />
                     <div dangerouslySetInnerHTML={{ __html: item.content.rendered }}></div>
                   </div>
                   <form onSubmit={handleSubmit} className='container mt-5'>
