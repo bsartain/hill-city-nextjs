@@ -5,6 +5,7 @@ import Header from "components/Header";
 import { useRouter } from "next/router";
 import { formatDate } from "utils";
 import ReactPaginate from "react-paginate";
+import HeadingDivider from "components/HeadingDivider";
 
 const SermonsPage = ({ data }) => {
   const router = useRouter();
@@ -86,7 +87,32 @@ const SermonsPage = ({ data }) => {
       <span>
         <Header data={[data[0]]} router={router} />
         <div className='container mt-5 sermon-page-container'>
-          <h1>SERMONS</h1>
+          <div className='sermon-podcast-blurb'>
+            All sermon audio is available for free on iTunes or your favorite podcast app.
+            <br /> Simply subscribe to the Hill City Church Audio podcast.
+            <div className='podcast-icons'>
+              <a
+                href='https://podcasts.apple.com/us/podcast/hill-city-church-rock-hill-sc/id1529110625'
+                target='_blank'
+                rel='noreferrer'>
+                <i className='fa-solid fa-podcast'></i>
+              </a>
+              <a
+                href='https://open.spotify.com/show/689D8k7FZnLQe1KZTJKEZh?si=73dccf8187964e6c'
+                target='_blank'
+                rel='noreferrer'>
+                <i className='fab fa-spotify'></i>
+              </a>
+              <a
+                href='https://www.stitcher.com/show/hill-city-church'
+                target='_blank'
+                rel='noreferrer'>
+                <i className='fa-sharp fa-solid fa-chart-simple'></i>
+              </a>
+            </div>
+          </div>
+          <h1>Current Sermons</h1>
+          <HeadingDivider />
           <div className='row d-flex justify-content-center'>
             {displaySermons}
             <div className='pagination-container'>

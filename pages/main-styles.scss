@@ -56,8 +56,8 @@ a:hover {
 
 p {
   line-height: 1.4em;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   color: #737373;
 }
 
@@ -434,14 +434,24 @@ footer {
   }
   line-height: 1.6em;
   font-weight: 400;
-  font-size: 16px;
-  color: #707070;
+  font-size: 18px;
+  color: #737373;
 }
 
 .sermon-page-container {
   display: table;
   flex-wrap: wrap;
   justify-content: center;
+  .sermon-podcast-blurb {
+    text-align: center;
+    margin: 25px 0;
+    .podcast-icons {
+      font-size: 50px;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
   .paginationBtns {
     display: flex;
     list-style: none;
@@ -794,6 +804,22 @@ footer {
   display: none;
 }
 
+.heading-divider {
+  margin: 20px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  .heading-border {
+    border-top: 1px solid #737373;
+    width: 70px;
+  }
+}
+
+.widom-section-container {
+  .wisdom-header {
+    margin: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .title-header-container {
     h1 {
@@ -835,6 +861,17 @@ footer {
   .sermon-page-container {
     .card {
       margin: 0px 0px 20px 0px;
+    }
+    .sermon-podcast-blurb {
+      text-align: center;
+      margin: 10px 0;
+      padding: 25px;
+      .podcast-icons {
+        font-size: 50px;
+        i {
+          margin-right: 10px;
+        }
+      }
     }
   }
   .sermon-details-container {
@@ -888,6 +925,19 @@ footer {
     margin: 0;
     .card {
       margin: 0px 0px 20px 0px;
+    }
+  }
+  .container {
+    padding: 25px !important;
+  }
+  .navbar-white {
+    .container {
+      padding: 0px 10px !important;
+    }
+  }
+  .navbar-transparent {
+    .container {
+      padding: 0px 10px !important;
     }
   }
 }

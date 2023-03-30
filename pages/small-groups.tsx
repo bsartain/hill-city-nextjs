@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { useRouter } from "next/router";
 import ReactPaginate from "react-paginate";
 import { formatDate } from "utils";
+import HeadingDivider from "components/HeadingDivider";
 
 const SmallGroupsPage = ({ data, sermonData }) => {
   const { setOpenMediaDrawer, setSingleSermon } = useContext(Store);
@@ -57,6 +58,7 @@ const SmallGroupsPage = ({ data, sermonData }) => {
                 <Header data={data} router={router} />
                 <div className='container mt-5' key={index}>
                   <h1>{item.title.rendered}</h1>
+                  <HeadingDivider />
                   <div dangerouslySetInnerHTML={{ __html: item.content.rendered }} />
                 </div>
                 <div className='container mt-5 small-groups-page-container'>

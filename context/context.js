@@ -8,7 +8,8 @@ function Context({ children }) {
   const [liveStreamPageStyles, setLiveStreamPageStyles] = useState({
     background: "",
     color: "#737373",
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: 400,
   });
 
   return (
