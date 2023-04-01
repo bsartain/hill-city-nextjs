@@ -26,6 +26,7 @@ export default function Document() {
           `,
           }}
         />
+        <script src='https://cdn.onesignal.com/sdks/OneSignalSDK.js' async={true}></script>
       </Head>
       <body>
         <Main />
