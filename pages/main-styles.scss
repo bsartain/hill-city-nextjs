@@ -452,6 +452,9 @@ footer {
       }
     }
   }
+  .sermon-filter {
+    flex-direction: row;
+  }
   .paginationBtns {
     display: flex;
     list-style: none;
@@ -755,6 +758,13 @@ footer {
     margin-top: -13px;
     padding-top: 10px;
   }
+  .nav-tabs:nth-child(1) {
+    .nav-item {
+      button {
+        box-shadow: none !important;
+      }
+    }
+  }
   .nav-tabs {
     border: none;
     margin-bottom: 30px;
@@ -861,6 +871,9 @@ footer {
   .sermon-page-container {
     .card {
       margin: 0px 0px 20px 0px;
+    }
+    .sermon-filter {
+      flex-direction: column !important;
     }
     .sermon-podcast-blurb {
       text-align: center;
