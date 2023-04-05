@@ -15,8 +15,7 @@ const Devotional = ({ data, psalms, proverbs, ecclesiastes, todaysDevo }) => {
       return (
         <div key={index} className='container'>
           <RefTagger bibleVersion={"ESV"} />
-          <div className='devotional-content' dangerouslySetInnerHTML={{ __html: item.body }}></div>
-          <div />
+          <div className='devotional-content' dangerouslySetInnerHTML={{ __html: item.body }} />
         </div>
       );
     });
