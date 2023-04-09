@@ -214,6 +214,9 @@ const LiveStream = ({ data, orderOfService }) => {
                               </button>
                             )}
                             content={() => componentRef.current}
+                            onBeforeGetContent={() => {
+                              setPrintLogo(true);
+                            }}
                             onBeforePrint={() => {
                               setPrintLogo(true);
                             }}
@@ -328,7 +331,7 @@ const LiveStream = ({ data, orderOfService }) => {
                                 marginBottom: "39px",
                               }}>
                               <img
-                                src='https://hillcitysc.com/wp-content/uploads/2021/02/HC-print-masthead-logo-e1612377440345.png'
+                                src='/images/HC-print-masthead-logo-Black.png'
                                 alt='Hill City Church: Rock Hill SC'
                               />
                             </div>

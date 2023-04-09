@@ -8,6 +8,7 @@ export default function Document() {
           rel='stylesheet'
           href='https://kit.fontawesome.com/8b07aff316.css'
           crossOrigin='anonymous'></link>
+        <link rel='manifest' href='/manifest.json' />
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async
@@ -25,6 +26,7 @@ export default function Document() {
           `,
           }}
         />
+        <script src='https://cdn.onesignal.com/sdks/OneSignalSDK.js' async={true}></script>
       </Head>
       <body>
         <Main />
