@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat");
+  font-family: 'Montserrat';
+  src: local('Montserrat');
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
   height: 100%;
 }
 
@@ -67,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   text-transform: uppercase;
   font-weight: 400;
   color: #535353;
@@ -269,7 +269,7 @@ h6 {
             color: #fff;
             letter-spacing: 0.4px;
             font-size: 13px;
-            font-family: "Montserrat", sans-serif !important;
+            font-family: 'Montserrat', sans-serif !important;
           }
           .home-title {
             font-weight: 100;
@@ -660,7 +660,7 @@ footer {
       background-size: cover;
       background-position: center center;
       height: 122px;
-      width: 200px;
+      width: 210px;
     }
     .audio-content {
       margin: 7px 20px;
@@ -693,7 +693,7 @@ footer {
     background-color: #323232;
     .rhap_time {
       color: #a7a6a6 !important;
-      font-family: "Montserrat", sans-serif !important;
+      font-family: 'Montserrat', sans-serif !important;
     }
     .rhap_controls-section {
       color: #a7a6a6;
