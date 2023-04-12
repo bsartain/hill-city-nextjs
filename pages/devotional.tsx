@@ -42,7 +42,9 @@ const Devotional = ({ data, psalms, proverbs, ecclesiastes, todaysDevo }) => {
     better_featured_image: {
       media_details: {
         sizes: {
-          medium: { source_url: "/images/Bible-Open-Coffee-Notes.jpeg" },
+          medium: {
+            source_url: "https://hillcitysc.com/wp-content/uploads/2023/03/bible-coffee.jpeg",
+          },
         },
       },
     },
