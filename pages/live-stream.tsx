@@ -48,9 +48,7 @@ const LiveStream = ({ data, orderOfService }) => {
   const { liveStreamPageStyles } = useContext(Store);
   const { acf } = orderOfService;
   const componentRef = useRef();
-  const youtubeLink = acf.youtube_link
-    ? acf.youtube_link.replace("live", "embed")
-    : acf.youtube_link;
+  const youtubeLink = acf.youtube_link ? acf.youtube_link.replace("live", "embed") : acf.youtube_link;
 
   const router = useRouter();
 
@@ -149,27 +147,22 @@ const LiveStream = ({ data, orderOfService }) => {
                 <div key={index} className='order-of-service-container'>
                   <Header data={data} router={router} />
                   <style>
-                    {`.order-of-service-container p {
-                        color: ${liveStreamPageStyles.color};
-                        font-size: ${liveStreamPageStyles.fontSize}px
+                    {`body {
+                        background: ${liveStreamPageStyles.background}!important;
                       }
-                      .order-of-service-container h2 {
+                      p{
+                        font-size: ${liveStreamPageStyles.fontSize}px;
                         color: ${liveStreamPageStyles.color};
                       }
-                      .order-of-service-container h3 {
-                        color: ${liveStreamPageStyles.color};
+                      h2,h3,h4,h5{
+                        color: ${liveStreamPageStyles.color}!important;
+                      }
+                      .title-header-container{
+                        color: #ffffff
                       }
                       .catechism{
-                        color: ${liveStreamPageStyles.color}           
-                      }
-                      .catechism-text{
-                        font-size: ${liveStreamPageStyles.fontSize}px             
-                      }
-                      .announcements-container p{
-                        font-size: ${liveStreamPageStyles.fontSize}px  
-                      }
-                      .prayer-requests-container p{
-                        font-size: ${liveStreamPageStyles.fontSize}px  
+                        font-size: ${liveStreamPageStyles.fontSize}px;
+                        color: ${liveStreamPageStyles.color};
                       }
                     `}
                   </style>
@@ -190,17 +183,11 @@ const LiveStream = ({ data, orderOfService }) => {
                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                     allowFullScreen
                   />
-                  <div
-                    className='container'
-                    style={{
-                      background: liveStreamPageStyles.background,
-                    }}>
+                  <div className='container'>
                     <div className='first-row-tabs'>
                       <ul className='nav nav-tabs'>
                         <li className='nav-item'>
-                          <button
-                            className='nav-link active me-2'
-                            onClick={() => window.open(`${acf.youtube_link}`)}>
+                          <button className='nav-link active me-2' onClick={() => window.open(`${acf.youtube_link}`)}>
                             <i className='fa-brands fa-youtube'></i>
                             <div className='tab-text'>Watch on YouTube</div>
                           </button>
@@ -225,9 +212,7 @@ const LiveStream = ({ data, orderOfService }) => {
                           />
                         </li>
                         <li className='nav-item'>
-                          <button
-                            className='nav-link active'
-                            onClick={() => setShowConnectCard(true)}>
+                          <button className='nav-link active' onClick={() => setShowConnectCard(true)}>
                             <i className='fa-solid fa-address-card'></i>
                             <div className='tab-text'>Connect Card</div>
                           </button>
@@ -244,9 +229,7 @@ const LiveStream = ({ data, orderOfService }) => {
                                     id='floatingName'
                                     placeholder='Name'
                                     value={form.name ? form.name : ""}
-                                    onChange={(e: any) =>
-                                      setForm({ ...form, name: e.target.value })
-                                    }
+                                    onChange={(e: any) => setForm({ ...form, name: e.target.value })}
                                     required
                                   />
                                   <label htmlFor='floatingName'>Name</label>
@@ -258,9 +241,7 @@ const LiveStream = ({ data, orderOfService }) => {
                                     id='floatingEmail'
                                     placeholder='name@example.com'
                                     value={form.email ? form.email : ""}
-                                    onChange={(e: any) =>
-                                      setForm({ ...form, email: e.target.value })
-                                    }
+                                    onChange={(e: any) => setForm({ ...form, email: e.target.value })}
                                     required
                                   />
                                   <label htmlFor='floatingEmail'>Email address</label>
@@ -272,9 +253,7 @@ const LiveStream = ({ data, orderOfService }) => {
                                     id='floatingPhone'
                                     placeholder='Phone'
                                     value={form.phone ? form.phone : ""}
-                                    onChange={(e: any) =>
-                                      setForm({ ...form, phone: e.target.value })
-                                    }
+                                    onChange={(e: any) => setForm({ ...form, phone: e.target.value })}
                                   />
                                   <label htmlFor='floatingPhone'>Phone/Text</label>
                                 </div>
@@ -282,24 +261,18 @@ const LiveStream = ({ data, orderOfService }) => {
                                   <button type='submit' className='btn btn-primary mt-3'>
                                     Submit
                                   </button>
-                                  {spinner ? (
-                                    <Spinner
-                                      animation='border'
-                                      style={{ marginTop: "12px", marginLeft: "10px" }}
-                                    />
-                                  ) : null}
+                                  {spinner ? <Spinner animation='border' style={{ marginTop: "12px", marginLeft: "10px" }} /> : null}
                                 </div>
                               </form>
                               {alert.success ? (
                                 <Alert key={"success"} variant={"success"} className='mt-3'>
-                                  Your message was sent successfully. One of our Elders will review
-                                  your message promptly and get back to you. God bless.
+                                  Your message was sent successfully. One of our Elders will review your message promptly and get back to
+                                  you. God bless.
                                 </Alert>
                               ) : null}
                               {alert.failed ? (
                                 <Alert key={"danger"} variant={"danger"} className='mt-3'>
-                                  Your message did not send. Please check the information and try
-                                  again.
+                                  Your message did not send. Please check the information and try again.
                                 </Alert>
                               ) : null}
                             </Modal.Body>
@@ -307,10 +280,7 @@ const LiveStream = ({ data, orderOfService }) => {
                         </li>
                       </ul>
                     </div>
-                    <Tabs
-                      defaultActiveKey='orderOfService'
-                      id='uncontrolled-tab-example'
-                      className='mb-3'>
+                    <Tabs defaultActiveKey='orderOfService' id='uncontrolled-tab-example' className='mb-3'>
                       <Tab
                         eventKey='orderOfService'
                         title={
@@ -330,10 +300,7 @@ const LiveStream = ({ data, orderOfService }) => {
                                 paddingBottom: "39px",
                                 marginBottom: "39px",
                               }}>
-                              <img
-                                src='/images/HC-print-masthead-logo-Black.png'
-                                alt='Hill City Church: Rock Hill SC'
-                              />
+                              <img src='/images/HC-print-masthead-logo-Black.png' alt='Hill City Church: Rock Hill SC' />
                             </div>
                           ) : null}
                           {serviceOrder && serviceOrder.specialReading
@@ -353,16 +320,10 @@ const LiveStream = ({ data, orderOfService }) => {
                               })
                             : null}
                           <h3 className='mt-5'>Call to Worship</h3>
-                          {serviceOrder &&
-                          serviceOrder.callToWorship &&
-                          Object.keys(serviceOrder.callToWorship).length > 0
-                            ? serviceOrder.callToWorship.passages.map(
-                                (verse: any, index: number) => {
-                                  return (
-                                    <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />
-                                  );
-                                }
-                              )
+                          {serviceOrder && serviceOrder.callToWorship && Object.keys(serviceOrder.callToWorship).length > 0
+                            ? serviceOrder.callToWorship.passages.map((verse: any, index: number) => {
+                                return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
+                              })
                             : null}
                           <div className='divider'></div>
                           <h2 className='song-title'>Song: {serviceOrder.songOneTitle}</h2>
@@ -370,47 +331,32 @@ const LiveStream = ({ data, orderOfService }) => {
                           <div className='divider'></div>
                           <h3>Confession Of Sin</h3>
                           <p className='mb-5'>
-                            This is the time in our service where we confess our sins before God.
-                            Cleansing and freedom begin with being honest with our sins and failures
-                            before God so that He can restore us back to Joy and peace. Take a few
-                            moments to confess sin before God. You can use this scripture to help
-                            you do that.
+                            This is the time in our service where we confess our sins before God. Cleansing and freedom begin with being
+                            honest with our sins and failures before God so that He can restore us back to Joy and peace. Take a few moments
+                            to confess sin before God. You can use this scripture to help you do that.
                           </p>
-                          {serviceOrder &&
-                          serviceOrder.confession &&
-                          Object.keys(serviceOrder.confession).length > 0
+                          {serviceOrder && serviceOrder.confession && Object.keys(serviceOrder.confession).length > 0
                             ? serviceOrder.confession.passages.map((verse: any, index: number) => {
-                                return (
-                                  <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />
-                                );
+                                return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
                               })
                             : null}
                           <div className='divider'></div>
                           <h3>Assurance Of Grace</h3>
                           <p className='mb-5'>
-                            You cannot out sin God's grace. The power of the cross is such that
-                            Jesus made His love and forgiveness more powerful toward you than your
-                            offenses toward Him.
+                            You cannot out sin God's grace. The power of the cross is such that Jesus made His love and forgiveness more
+                            powerful toward you than your offenses toward Him.
                           </p>
-                          {serviceOrder &&
-                          serviceOrder.assurance &&
-                          Object.keys(serviceOrder.assurance).length > 0
+                          {serviceOrder && serviceOrder.assurance && Object.keys(serviceOrder.assurance).length > 0
                             ? serviceOrder.assurance.passages.map((verse: any, index: number) => {
-                                return (
-                                  <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />
-                                );
+                                return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
                               })
                             : null}
                           <div className='divider'></div>
                           <h3>Offertory</h3>
+                          <p>In response to what the Lord has done for us, let's worship Him in the giving of our tithes and offerings.</p>
                           <p>
-                            In response to what the Lord has done for us, let's worship Him in the
-                            giving of our tithes and offerings.
-                          </p>
-                          <p>
-                            We do this as an expression of joy and gratitude, not obligation. Below
-                            you'll find a link to our giving page. If you are a member of Hill City
-                            Church please give joyously and generously.
+                            We do this as an expression of joy and gratitude, not obligation. Below you'll find a link to our giving page.
+                            If you are a member of Hill City Church please give joyously and generously.
                           </p>
                           <a
                             href='https://hillcitysc.churchcenter.com/giving?open-in-church-center-modal=true'
@@ -419,26 +365,15 @@ const LiveStream = ({ data, orderOfService }) => {
                           </a>
                           <div className='divider'></div>
                           <h2 className='song-title'>Song: {serviceOrder.songTwoTitle}</h2>
-                          <div
-                            key={index}
-                            dangerouslySetInnerHTML={{ __html: serviceOrder.songTwoLyrics }}
-                          />
+                          <div key={index} dangerouslySetInnerHTML={{ __html: serviceOrder.songTwoLyrics }} />
                           <div className='divider'></div>
-                          {serviceOrder.childrensSermon === "yes" ? (
-                            <h3>Children's Sermon</h3>
-                          ) : null}
+                          {serviceOrder.childrensSermon === "yes" ? <h3>Children's Sermon</h3> : null}
                           <div className='divider'></div>
                           <h3>Scripture Reading</h3>
-                          {serviceOrder &&
-                          serviceOrder.scriptureReading &&
-                          Object.keys(serviceOrder.scriptureReading).length > 0
-                            ? serviceOrder.scriptureReading.passages.map(
-                                (verse: any, index: number) => {
-                                  return (
-                                    <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />
-                                  );
-                                }
-                              )
+                          {serviceOrder && serviceOrder.scriptureReading && Object.keys(serviceOrder.scriptureReading).length > 0
+                            ? serviceOrder.scriptureReading.passages.map((verse: any, index: number) => {
+                                return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
+                              })
                             : null}
                           <div className='divider'></div>
                           <h3>Sermon: {serviceOrder.preacher}</h3>
@@ -450,16 +385,9 @@ const LiveStream = ({ data, orderOfService }) => {
                           <div className='divider'></div>
                           <h3>Benediction</h3>
                           {serviceOrder && serviceOrder.benediction
-                            ? serviceOrder.benediction.passages.map(
-                                (benediction: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      dangerouslySetInnerHTML={{ __html: benediction }}
-                                    />
-                                  );
-                                }
-                              )
+                            ? serviceOrder.benediction.passages.map((benediction: any, index: number) => {
+                                return <div key={index} dangerouslySetInnerHTML={{ __html: benediction }} />;
+                              })
                             : null}
                         </div>
                         <div className='divider'></div>
@@ -475,9 +403,7 @@ const LiveStream = ({ data, orderOfService }) => {
                           </>
                         }>
                         <>
-                          {serviceOrder &&
-                          serviceOrder.announcements &&
-                          serviceOrder.announcements.length > 0
+                          {serviceOrder && serviceOrder.announcements && serviceOrder.announcements.length > 0
                             ? serviceOrder.announcements.map((item: any, index: number) => {
                                 return (
                                   <span key={index}>
@@ -524,16 +450,12 @@ const LiveStream = ({ data, orderOfService }) => {
                             <div className='tab-text'>Prayer Requests</div>
                           </>
                         }>
-                        {serviceOrder &&
-                        serviceOrder.prayerRequests &&
-                        serviceOrder.prayerRequests.length > 0
+                        {serviceOrder && serviceOrder.prayerRequests && serviceOrder.prayerRequests.length > 0
                           ? serviceOrder.prayerRequests.map((item: any, index: number) => {
                               return (
                                 <span key={index}>
                                   <div className='mb-0 mt-5 prayer-requests-container'>
-                                    <h3
-                                      style={{ color: "#caac5e", fontSize: "20px" }}
-                                      className='mb-0'>
+                                    <h3 style={{ color: "#caac5e", fontSize: "20px" }} className='mb-0'>
                                       {item.request_type}
                                     </h3>
                                     <h3>{item.name}</h3>
