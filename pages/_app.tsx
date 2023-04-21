@@ -5,7 +5,6 @@ import Context from "../context/context";
 import AudioPlayer from "components/AudioPlayer";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import useOneSignal from "utils/useOneSignal";
 import * as ga from "ga";
 
 export default function MyApp({ Component, pageProps }) {
@@ -25,8 +24,6 @@ export default function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
-
-  useOneSignal();
 
   return (
     <>
