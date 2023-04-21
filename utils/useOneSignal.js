@@ -5,8 +5,8 @@ const useOneSignal = () =>
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function () {
       OneSignal.init({
-        appId: "9aa8ff74-3226-4750-b4c7-f99718acc765",
-        safari_web_id: "web.onesignal.auto.41aef4b6-51a4-4778-92bc-f3aa3e26acde",
+        appId: "8cc82fdb-7b0d-4854-a96f-27330ae8032c",
+        safari_web_id: "web.onesignal.auto.052f5ca9-1683-44c8-8c04-d88e94620413",
         notifyButton: {
           enable: true,
         },
