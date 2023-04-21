@@ -6,9 +6,11 @@ import AudioPlayer from "components/AudioPlayer";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as ga from "ga";
+import useOneSignal from "../utils/useOneSignal";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  useOneSignal();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
