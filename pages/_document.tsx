@@ -1,11 +1,6 @@
-import { useEffect } from "react";
 import { Html, Head, Main, NextScript } from "next/document";
-import useOneSignal from "utils/useOneSignal";
 
 export default function Document() {
-  useEffect(() => {
-    useOneSignal();
-  }, []);
   return (
     <Html>
       <Head>
