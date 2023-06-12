@@ -9,9 +9,13 @@ import catechism from "data/catechismData.json";
 import { nextSundaysDate } from "utils";
 import ReactToPrint from "react-to-print";
 import HeadingDivider from "components/HeadingDivider";
+import apostlesCreed from "data/apostlesCreed.json";
+import niceneCreed from "data/niceneCreed.json";
+import ignatiusCreed from "data/ignatiusCreed.json";
 
 interface ServiceOrderModel {
   callToWorship: any;
+  creeds: string;
   songOneTitle: string;
   songOneLyrics: string;
   confession: any;
@@ -57,6 +61,7 @@ const LiveStream = ({ data, orderOfService }) => {
       setServiceOrder({
         ...serviceOrder,
         callToWorship: await crossway(acf.call_to_worship_verse),
+        creeds: acf.creeds,
         songOneTitle: acf.song_one_title,
         songOneLyrics: acf.song_one_lyrics,
         confession: await crossway(acf.confession_of_sin_verse),
@@ -135,6 +140,35 @@ const LiveStream = ({ data, orderOfService }) => {
         setAlert({ ...alert, failed: false });
       }, 5000);
     }
+  };
+
+  const setCreed = (creed: string) => {
+    let selectedCreed;
+    if (creed === "Apostles Creed") {
+      selectedCreed = (
+        <>
+          <h3 className='mt-5'>{apostlesCreed.Metadata.Title}</h3>
+          <p dangerouslySetInnerHTML={{ __html: apostlesCreed.Data.Content }} />
+        </>
+      );
+    } else if (creed === "Nicene Creed") {
+      selectedCreed = (
+        <>
+          <h3 className='mt-5'>{niceneCreed.Metadata.Title}</h3>
+          <p dangerouslySetInnerHTML={{ __html: niceneCreed.Data.Content }} />
+        </>
+      );
+    } else if (creed.includes("Ignatius")) {
+      selectedCreed = (
+        <>
+          <h3 className='mt-5'>{ignatiusCreed.Metadata.Title}</h3>
+          <p dangerouslySetInnerHTML={{ __html: ignatiusCreed.Data.Content }} />
+        </>
+      );
+    } else {
+      selectedCreed = null;
+    }
+    return selectedCreed;
   };
 
   return (
@@ -326,6 +360,12 @@ const LiveStream = ({ data, orderOfService }) => {
                               })
                             : null}
                           <div className='divider'></div>
+                          {serviceOrder && serviceOrder.creeds && serviceOrder.creeds !== "None" ? (
+                            <div>
+                              <div>{setCreed(serviceOrder.creeds)}</div>
+                              <div className='divider'></div>
+                            </div>
+                          ) : null}
                           <h2 className='song-title'>Song: {serviceOrder.songOneTitle}</h2>
                           <div dangerouslySetInnerHTML={{ __html: serviceOrder.songOneLyrics }} />
                           <div className='divider'></div>
