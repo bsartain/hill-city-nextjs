@@ -5,13 +5,16 @@ import Header from "../components/Header";
 import { useRouter } from "next/router";
 import { Tabs, Tab, Modal, Spinner, Alert } from "react-bootstrap";
 import { crossway } from "utils";
-import catechism from "data/catechismData.json";
 import { nextSundaysDate } from "utils";
 import ReactToPrint from "react-to-print";
 import HeadingDivider from "components/HeadingDivider";
 import apostlesCreed from "data/apostlesCreed.json";
 import niceneCreed from "data/niceneCreed.json";
 import ignatiusCreed from "data/ignatiusCreed.json";
+import WestminsterShorterCatechism from "components/WestminsterShorterCatechism";
+import WestminsterLargerCatechism from "components/WestminsterLargerCatechism";
+import NewCityCatechism from "components/NewCityCatechism";
+import HeidelbergCatechsim from "components/HeidelbergCatechism";
 
 interface ServiceOrderModel {
   callToWorship: any;
@@ -25,7 +28,7 @@ interface ServiceOrderModel {
   childrensSermon: string;
   scriptureReading: any;
   preacher: string;
-  catechism: string;
+  catechism: { catechism_selection: string; catechism_question: string };
   songThreeTitle: string;
   songThreeLyrics: string;
   benediction: any;
@@ -71,7 +74,7 @@ const LiveStream = ({ data, orderOfService }) => {
         childrensSermon: acf.childrens_sermon,
         scriptureReading: await crossway(acf.scripture_reading),
         preacher: acf.preacher,
-        catechism: acf.catechism_question_number,
+        catechism: acf.catechism,
         songThreeTitle: acf.song_three_title,
         songThreeLyrics: acf.song_three_lyrics,
         benediction: await crossway(acf.benediction_verse),
@@ -85,30 +88,18 @@ const LiveStream = ({ data, orderOfService }) => {
   }, [setServiceOrder]);
 
   const setCatechism = () => {
-    const filterCatechismNumber = catechism
-      .filter((item: any, index: number) => index + 1 === Number(serviceOrder.catechism))
-      .map((item: any, index: number) => {
-        return (
-          <div key={index} className='catechism'>
-            <h3 className='mb-0'>Catechism Question {serviceOrder.catechism}</h3>
-            <div className='mb-4 catechism-text'>
-              All questions are from the{" "}
-              <a href='http://newcitycatechism.com/' target='_blank' rel='noopener noreferrer'>
-                New City Catechism
-              </a>
-            </div>
-            <div className='mb-3 catechism-text'>
-              <strong>Question: </strong>
-              <span>{item.question}</span>
-            </div>
-            <div className='catechism-text'>
-              <strong>Answer: </strong>
-              <span>{item.answer.adult}</span>
-            </div>
-          </div>
-        );
-      });
-    return filterCatechismNumber;
+    switch (serviceOrder?.catechism?.catechism_selection) {
+      case "Westminster Larger Catechism":
+        return <WestminsterLargerCatechism selectedQuestion={serviceOrder.catechism.catechism_question} />;
+      case "Westminster Shorter Catechism":
+        return <WestminsterShorterCatechism selectedQuestion={serviceOrder.catechism.catechism_question} />;
+      case "New City Catechism":
+        return <NewCityCatechism selectedQuestion={serviceOrder.catechism.catechism_question} />;
+      case "Heidelberg Catechism":
+        return <HeidelbergCatechsim selectedQuestion={serviceOrder.catechism.catechism_question} />;
+      default:
+        return null;
+    }
   };
 
   const pageStyle = `
@@ -353,13 +344,18 @@ const LiveStream = ({ data, orderOfService }) => {
                                 );
                               })
                             : null}
-                          <h3 className='mt-5'>Call to Worship</h3>
                           {serviceOrder && serviceOrder.callToWorship && Object.keys(serviceOrder.callToWorship).length > 0
                             ? serviceOrder.callToWorship.passages.map((verse: any, index: number) => {
-                                return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
+                                return (
+                                  <>
+                                    <h3 className='mt-5'>Call to Worship</h3>
+                                    <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />
+                                    <div className='divider'></div>
+                                  </>
+                                );
                               })
                             : null}
-                          <div className='divider'></div>
+
                           {serviceOrder && serviceOrder.creeds && serviceOrder.creeds !== "None" ? (
                             <div>
                               <div>{setCreed(serviceOrder.creeds)}</div>
