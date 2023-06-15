@@ -15,6 +15,7 @@ import WestminsterShorterCatechism from "components/WestminsterShorterCatechism"
 import WestminsterLargerCatechism from "components/WestminsterLargerCatechism";
 import NewCityCatechism from "components/NewCityCatechism";
 import HeidelbergCatechsim from "components/HeidelbergCatechism";
+import { crosswayApi } from "services/crossway";
 
 interface ServiceOrderModel {
   callToWorship: any;
@@ -63,7 +64,10 @@ const LiveStream = ({ data, orderOfService }) => {
     const setTheOrderOfServiceState = async () => {
       setServiceOrder({
         ...serviceOrder,
-        callToWorship: await crossway(acf.call_to_worship_verse),
+        callToWorship:
+          acf?.call_to_worship_group?.show_call_to_worship === "show"
+            ? await crosswayApi(acf?.call_to_worship_group?.call_to_worship_verse)
+            : null,
         creeds: acf.creeds,
         songOneTitle: acf.song_one_title,
         songOneLyrics: acf.song_one_lyrics,
@@ -344,17 +348,13 @@ const LiveStream = ({ data, orderOfService }) => {
                                 );
                               })
                             : null}
-                          {serviceOrder && serviceOrder.callToWorship && Object.keys(serviceOrder.callToWorship).length > 0
-                            ? serviceOrder.callToWorship.passages.map((verse: any, index: number) => {
-                                return (
-                                  <>
-                                    <h3 className='mt-5'>Call to Worship</h3>
-                                    <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />
-                                    <div className='divider'></div>
-                                  </>
-                                );
-                              })
-                            : null}
+                          {serviceOrder.callToWorship ? (
+                            <div>
+                              <h3 className='mt-5'>Call to Worship</h3>
+                              <div dangerouslySetInnerHTML={{ __html: serviceOrder.callToWorship }} />
+                              <div className='divider'></div>
+                            </div>
+                          ) : null}
 
                           {serviceOrder && serviceOrder.creeds && serviceOrder.creeds !== "None" ? (
                             <div>
