@@ -348,10 +348,13 @@ const LiveStream = ({ data, orderOfService }) => {
                                 );
                               })
                             : null}
+
                           {serviceOrder.callToWorship ? (
                             <div>
                               <h3 className='mt-5'>Call to Worship</h3>
-                              <div dangerouslySetInnerHTML={{ __html: serviceOrder.callToWorship }} />
+                              {serviceOrder?.callToWorship?.passages.map((verse: any, index: number) => {
+                                return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
+                              })}
                               <div className='divider'></div>
                             </div>
                           ) : null}

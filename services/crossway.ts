@@ -15,6 +15,6 @@ export async function crosswayApi(verse: string): Promise<string> {
   if (!response.ok) {
     throw new Error();
   } else {
-    return bible.passages[0];
+    return bible;
   }
 }
