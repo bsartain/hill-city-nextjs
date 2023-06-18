@@ -66,7 +66,9 @@ const LiveStream = ({ data, orderOfService }) => {
         ...serviceOrder,
         callToWorship:
           acf?.call_to_worship_group?.show_call_to_worship === "show"
-            ? await crosswayApi(acf?.call_to_worship_group?.call_to_worship_verse)
+            ? acf?.call_to_worship_group?.select_call_to_worship_method === "Editor"
+              ? acf?.call_to_worship_group?.call_to_worship_editor
+              : await crosswayApi(acf?.call_to_worship_group?.call_to_worship_verse)
             : null,
         creeds: acf.creeds,
         songOneTitle: acf.song_one_title,
@@ -138,32 +140,93 @@ const LiveStream = ({ data, orderOfService }) => {
   };
 
   const setCreed = (creed: string) => {
-    let selectedCreed;
     if (creed === "Apostles Creed") {
-      selectedCreed = (
+      return (
         <>
           <h3 className='mt-5'>{apostlesCreed.Metadata.Title}</h3>
           <p dangerouslySetInnerHTML={{ __html: apostlesCreed.Data.Content }} />
         </>
       );
-    } else if (creed === "Nicene Creed") {
-      selectedCreed = (
+    }
+    if (creed === "Nicene Creed") {
+      return (
         <>
           <h3 className='mt-5'>{niceneCreed.Metadata.Title}</h3>
           <p dangerouslySetInnerHTML={{ __html: niceneCreed.Data.Content }} />
         </>
       );
-    } else if (creed.includes("Ignatius")) {
-      selectedCreed = (
+    }
+    if (creed.includes("Ignatius")) {
+      return (
         <>
           <h3 className='mt-5'>{ignatiusCreed.Metadata.Title}</h3>
           <p dangerouslySetInnerHTML={{ __html: ignatiusCreed.Data.Content }} />
         </>
       );
-    } else {
-      selectedCreed = null;
     }
-    return selectedCreed;
+    if (creed === "The Lords Prayer") {
+      return (
+        <p>
+          <h3>The Lords Prayer</h3>
+          <div>Our Father in heaven,</div>
+          <div>Hallowed be Your name.</div>
+          <div>Your kingdom come.</div>
+          <div>Your will be done</div>
+          <div>On earth as it is in heaven.</div>
+          <div>Give us this day our daily bread.</div>
+          <div>And forgive us our debts,</div>
+          <div>As we forgive our debtors.</div>
+          <div>And do not lead us into temptation,</div>
+          <div>But deliver us from the evil one.</div>
+          <div>For Yours is the kingdom and the power and the glory forever. </div>
+          <div>Amen.</div>
+        </p>
+      );
+    }
+    if (creed === "Ten Commandments") {
+      return (
+        <p>
+          <h3>The Ten Commandments</h3>
+          <div>You shall have no other gods before Me.</div>
+          <div>You shall not make idols.</div>
+          <div>You shall not take the name of the LORD your God in vain.</div>
+          <div>Remember the Sabbath day, to keep it holy.</div>
+          <div>Honor your father and your mother.</div>
+          <div>You shall not murder.</div>
+          <div>You shall not commit adultery.</div>
+          <div>You shall not steal.</div>
+          <div>You shall not bear false witness against your neighbor.</div>
+          <div>You shall not covet.</div>
+          <div>Amen.</div>
+        </p>
+      );
+    }
+
+    return null;
+  };
+
+  const setCallToWorship = () => {
+    if (serviceOrder.callToWorship?.passages?.length > 0) {
+      return (
+        <div>
+          <h3 className='mt-5'>Call to Worship</h3>
+          {serviceOrder?.callToWorship?.passages.map((verse: any, index: number) => {
+            return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
+          })}
+          <div className='divider'></div>
+        </div>
+      );
+    } else if (serviceOrder.callToWorship) {
+      return (
+        <>
+          <h3 className='mt-5'>Call to Worship</h3>
+          <div dangerouslySetInnerHTML={{ __html: serviceOrder.callToWorship }} />
+          <div className='divider'></div>
+        </>
+      );
+    } else {
+      return null;
+    }
   };
 
   return (
@@ -349,7 +412,7 @@ const LiveStream = ({ data, orderOfService }) => {
                               })
                             : null}
 
-                          {serviceOrder.callToWorship ? (
+                          {/* {serviceOrder.callToWorship?.passages?.length > 0 ? (
                             <div>
                               <h3 className='mt-5'>Call to Worship</h3>
                               {serviceOrder?.callToWorship?.passages.map((verse: any, index: number) => {
@@ -357,7 +420,15 @@ const LiveStream = ({ data, orderOfService }) => {
                               })}
                               <div className='divider'></div>
                             </div>
-                          ) : null}
+                          ) : (
+                            <>
+                              <h3 className='mt-5'>Call to Worship</h3>
+                              <div key={index} dangerouslySetInnerHTML={{ __html: serviceOrder.callToWorship }} />
+                              <div className='divider'></div>
+                            </>
+                          )} */}
+
+                          {setCallToWorship()}
 
                           {serviceOrder && serviceOrder.creeds && serviceOrder.creeds !== "None" ? (
                             <div>
@@ -406,7 +477,7 @@ const LiveStream = ({ data, orderOfService }) => {
                           <h2 className='song-title'>Song: {serviceOrder.songTwoTitle}</h2>
                           <div key={index} dangerouslySetInnerHTML={{ __html: serviceOrder.songTwoLyrics }} />
                           <div className='divider'></div>
-                          {serviceOrder.childrensSermon === "yes" ? <h3>Children's Sermon</h3> : null}
+                          {serviceOrder.childrensSermon === "yes" ? <h3>Children's Story</h3> : null}
                           <div className='divider'></div>
                           <h3>Scripture Reading</h3>
                           {serviceOrder && serviceOrder.scriptureReading && Object.keys(serviceOrder.scriptureReading).length > 0
@@ -417,7 +488,10 @@ const LiveStream = ({ data, orderOfService }) => {
                           <div className='divider'></div>
                           <h3>Sermon: {serviceOrder.preacher}</h3>
                           <div className='divider'></div>
+                          <h3>Confession Of Faith</h3>
                           {setCatechism()}
+                          <div className='divider'></div>
+                          <h2 className='song-title'>The Table</h2>
                           <div className='divider'></div>
                           <h2 className='song-title'>Song: {serviceOrder.songThreeTitle}</h2>
                           <div dangerouslySetInnerHTML={{ __html: serviceOrder.songThreeLyrics }} />
