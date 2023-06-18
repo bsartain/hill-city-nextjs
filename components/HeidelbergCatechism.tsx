@@ -7,9 +7,11 @@ const HeidelbergCatechsim: React.FC<{ selectedQuestion: string }> = ({ selectedQ
         if (item.Number.toString() === selectedQuestion) {
           return (
             <div key={index}>
-              <h3>
-                {HeidelbergCatechsimData.Metadata.Title}: Question {selectedQuestion}
-              </h3>
+              <p>
+                <strong>
+                  {HeidelbergCatechsimData.Metadata.Title}: Question {selectedQuestion}
+                </strong>
+              </p>
               <div>
                 <strong style={{ color: "#767676" }}>Question:&nbsp;</strong>
                 <p dangerouslySetInnerHTML={{ __html: item.Question }}></p>
