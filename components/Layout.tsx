@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useRouter } from "next/router";
 import { HexColorPicker } from "react-colorful";
+import SpecialAnnouncementModal from "components/SpecialAnnouncementModal";
 
 type Props = {
   children?: ReactNode;
@@ -334,18 +335,7 @@ function Layout({ children, title, meta, data }: Props) {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
-      <Modal show={showAnnouncementModal} onHide={() => setShowAnnouncementModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            <h4 className='mt-3'>Special Announcement</h4>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {data && data.special_announcement ? (
-            <div className='p-2' dangerouslySetInnerHTML={{ __html: data.special_announcement }} />
-          ) : null}
-        </Modal.Body>
-      </Modal>
+      <SpecialAnnouncementModal />
     </div>
   );
 }

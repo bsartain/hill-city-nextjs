@@ -74,11 +74,7 @@ const IndexPage = (props) => {
             };
             return (
               <section key={index} style={backgroundImageStyles} className='homepage-section'>
-                <div
-                  className='homepage-content-container'
-                  dangerouslySetInnerHTML={{ __html: section.content }}
-                  style={contentStyles}
-                />
+                <div className='homepage-content-container' dangerouslySetInnerHTML={{ __html: section.content }} style={contentStyles} />
               </section>
             );
           })}
