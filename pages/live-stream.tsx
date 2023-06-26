@@ -575,7 +575,7 @@ const LiveStream = ({ data, orderOfService }) => {
 export default LiveStream;
 
 export async function getServerSideProps(context) {
-  const response = await fetch("https://hillcitysc.com/wp-json/wp/v2/pages?per_page=50");
+  const response = await fetch(`https://hillcitysc.com/wp-json/wp/v2/pages?per_page=50`);
   const orderOfServiceResponse = await fetch(
     `https://hillcitysc.com/wp-json/acf/v3/posts/8857?freshCopy=${Math.floor(Math.random() * 90000) + 10000}`
   );
