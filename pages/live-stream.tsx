@@ -411,25 +411,7 @@ const LiveStream = ({ data, orderOfService }) => {
                                 );
                               })
                             : null}
-
-                          {/* {serviceOrder.callToWorship?.passages?.length > 0 ? (
-                            <div>
-                              <h3 className='mt-5'>Call to Worship</h3>
-                              {serviceOrder?.callToWorship?.passages.map((verse: any, index: number) => {
-                                return <div key={index} dangerouslySetInnerHTML={{ __html: verse }} />;
-                              })}
-                              <div className='divider'></div>
-                            </div>
-                          ) : (
-                            <>
-                              <h3 className='mt-5'>Call to Worship</h3>
-                              <div key={index} dangerouslySetInnerHTML={{ __html: serviceOrder.callToWorship }} />
-                              <div className='divider'></div>
-                            </>
-                          )} */}
-
                           {setCallToWorship()}
-
                           {serviceOrder && serviceOrder.creeds && serviceOrder.creeds !== "None" ? (
                             <div>
                               <div>{setCreed(serviceOrder.creeds)}</div>
@@ -593,8 +575,10 @@ const LiveStream = ({ data, orderOfService }) => {
 export default LiveStream;
 
 export async function getServerSideProps(context) {
-  const response = await fetch("https://hillcitysc.com/wp-json/wp/v2/pages?per_page=50");
-  const orderOfServiceResponse = await fetch("https://hillcitysc.com/wp-json/acf/v3/posts/8857");
+  const response = await fetch(`https://hillcitysc.com/wp-json/wp/v2/pages?per_page=50`);
+  const orderOfServiceResponse = await fetch(
+    `https://hillcitysc.com/wp-json/acf/v3/posts/8857?freshCopy=${Math.floor(Math.random() * 90000) + 10000}`
+  );
   const json = await response.json();
   const jsonOrderOfService = await orderOfServiceResponse.json();
   const filter = json.filter((item) => item.id === 8857);
