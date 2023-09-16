@@ -120,8 +120,13 @@ const LiveStream = ({ data, orderOfService }) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setSpinner(true);
-    const response = await fetch("api/mail", {
+    const url = "https://public.herotofu.com/v1/8b8527b0-54b4-11ee-be6e-c34ffd625ead";
+    const response = await fetch(url, {
       method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(form),
     });
     setSpinner(false);
