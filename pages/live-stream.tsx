@@ -37,6 +37,7 @@ interface ServiceOrderModel {
   miscellaneous: string;
   announcements: Array<object>;
   prayerRequests: Array<object>;
+  theTable: string;
 }
 
 const LiveStream = ({ data, orderOfService }) => {
@@ -88,6 +89,7 @@ const LiveStream = ({ data, orderOfService }) => {
         miscellaneous: acf.miscellaneous_info,
         announcements: acf.announcements_section,
         prayerRequests: acf.prayer_requests_section,
+        theTable: acf.the_table,
       });
     };
     setTheOrderOfServiceState();
@@ -477,8 +479,12 @@ const LiveStream = ({ data, orderOfService }) => {
                           <div className='divider'></div>
                           <h3>Confession Of Faith</h3>
                           {setCatechism()}
-                          <div className='divider'></div>
-                          <h2 className='song-title'>The Table</h2>
+                          {serviceOrder.theTable === "show" ? (
+                            <>
+                              <div className='divider'></div>
+                              <h2 className='song-title'>The Table</h2>
+                            </>
+                          ) : null}
                           <div className='divider'></div>
                           <h2 className='song-title'>Song: {serviceOrder.songThreeTitle}</h2>
                           <div dangerouslySetInnerHTML={{ __html: serviceOrder.songThreeLyrics }} />
