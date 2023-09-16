@@ -22,8 +22,13 @@ const Contact = ({ data, mapAndTimes }) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setSpinner(true);
-    const response = await fetch("api/mail", {
+    const url = "https://public.herotofu.com/v1/d0d911b0-54b3-11ee-b04f-17ba4776c03d";
+    const response = await fetch(url, {
       method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(form),
     });
     setSpinner(false);
@@ -97,9 +102,7 @@ const Contact = ({ data, mapAndTimes }) => {
                         style={{ height: "100px" }}
                         name='message'
                         value={form.message ? form.message : ""}
-                        onChange={(e: any) =>
-                          setForm({ ...form, message: e.target.value })
-                        }></textarea>
+                        onChange={(e: any) => setForm({ ...form, message: e.target.value })}></textarea>
                       <label htmlFor='floatingTextarea'>Message</label>
                     </div>
                     <div className='d-flex align-items-start'>
@@ -109,8 +112,7 @@ const Contact = ({ data, mapAndTimes }) => {
                       {spinner ? <Spinner animation='border' className='mt-3' /> : null}
                       {alert.success ? (
                         <Alert key={"success"} variant={"success"} className='mt-3'>
-                          Your message was sent successfully. One of our Elders will review promptly
-                          and get back to you. God bless.
+                          Your message was sent successfully. One of our Elders will review promptly and get back to you. God bless.
                         </Alert>
                       ) : null}
                       {alert.failed ? (
@@ -126,8 +128,7 @@ const Contact = ({ data, mapAndTimes }) => {
                         return (
                           <div className='d-flex service-times-details' key={index}>
                             <div className='service-times'>
-                              <div
-                                dangerouslySetInnerHTML={{ __html: item.acf.footer_content }}></div>
+                              <div dangerouslySetInnerHTML={{ __html: item.acf.footer_content }}></div>
                             </div>
                             <iframe
                               src={item.acf.footer_map}

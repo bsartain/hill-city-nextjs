@@ -122,8 +122,13 @@ const LiveStream = ({ data, orderOfService }) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setSpinner(true);
-    const response = await fetch('api/mail', {
-      method: 'POST',
+    const url = "https://public.herotofu.com/v1/8b8527b0-54b4-11ee-be6e-c34ffd625ead";
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(form),
     });
     setSpinner(false);
@@ -471,15 +476,14 @@ const LiveStream = ({ data, orderOfService }) => {
                           <div className="divider"></div>
                           <h3>Confession Of Faith</h3>
                           {setCatechism()}
-                          {serviceOrder.theTable === 'show' ? (
+                          {serviceOrder.theTable === "show" ? (
                             <>
-                              <div className="divider"></div>
-                              <h2 className="song-title">The Table</h2>
+                              <div className='divider'></div>
+                              <h2 className='song-title'>The Table</h2>
                             </>
                           ) : null}
-
-                          <div className="divider"></div>
-                          <h2 className="song-title">Song: {serviceOrder.songThreeTitle}</h2>
+                          <div className='divider'></div>
+                          <h2 className='song-title'>Song: {serviceOrder.songThreeTitle}</h2>
                           <div dangerouslySetInnerHTML={{ __html: serviceOrder.songThreeLyrics }} />
                           <div className="divider"></div>
                           <h3>Benediction</h3>
