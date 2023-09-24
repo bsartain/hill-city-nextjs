@@ -50,42 +50,38 @@ const SermonsPage = ({ data }) => {
   const series = Array.from(new Set(seriesList));
   const bibleBook = Array.from(new Set(bibleBookList));
 
-  const displaySermons = sermons
-    .slice(pagesVisited, pagesVisited + sermonsPerPage)
-    .map((sermon: any, index: number) => {
-      return (
-        <div className='card' key={index} onClick={() => routeToSingleSermon(sermon)}>
-          <div
-            className='sermon-card-background-image'
-            style={{ backgroundImage: `url(${sermon.featured_image.large})` }}></div>
-          <div className='card-body'>
-            {sermon.sermon_series.map((series: any, index: number) => {
-              return (
-                <span key={index} className='fst-italic card-series'>
-                  {series.name}
-                </span>
-              );
-            })}
-            <h5 className='card-title'>{sermon.title}</h5>
-            <small>{formatDate(sermon.date)}</small>
-            <div className='preacher-passage-container'>
-              <div>
-                <small className='card-preacher'>Preacher: </small>
-                {sermon.preacher.map((preacher: any, index: number) => {
-                  return <small key={index}>{preacher.name}</small>;
-                })}
-              </div>
-              <span className='card-divider'>|</span>
-              <div>
-                <small>
-                  <span className='card-passage'>Passage:</span> {sermon.bible_passage}
-                </small>
-              </div>
+  const displaySermons = sermons.slice(pagesVisited, pagesVisited + sermonsPerPage).map((sermon: any, index: number) => {
+    return (
+      <div className='card' key={index} onClick={() => routeToSingleSermon(sermon)}>
+        <div className='sermon-card-background-image' style={{ backgroundImage: `url(${sermon.featured_image.large})` }}></div>
+        <div className='card-body'>
+          {sermon.sermon_series.map((series: any, index: number) => {
+            return (
+              <span key={index} className='fst-italic card-series'>
+                {series.name}
+              </span>
+            );
+          })}
+          <h5 className='card-title'>{sermon.title}</h5>
+          <small>{formatDate(sermon.date)}</small>
+          <div className='preacher-passage-container'>
+            <div>
+              <small className='card-preacher'>Preacher: </small>
+              {sermon.preacher.map((preacher: any, index: number) => {
+                return <small key={index}>{preacher.name}</small>;
+              })}
+            </div>
+            <span className='card-divider'>|</span>
+            <div>
+              <small>
+                <span className='card-passage'>Passage:</span> {sermon.bible_passage}
+              </small>
             </div>
           </div>
         </div>
-      );
-    });
+      </div>
+    );
+  });
 
   const routeToSingleSermon = (sermon) => {
     setSingleSermon([sermon]);
@@ -151,7 +147,19 @@ const SermonsPage = ({ data }) => {
     setSermons(json.slice(0, 300));
   };
 
-  useEffect(() => {}, [sermonFilteredParameters, setSermonFilteredParameters]);
+  useEffect(() => {
+    const getUrlParams = () => {
+      if (router.query.preacher) {
+        const preacherName: any = router.query.preacher;
+        getFilteredSermons(preacherName, "preacher");
+        setSermonFilteredParameters((prevParams) => ({
+          ...prevParams,
+          preacher: preacherName,
+        }));
+      }
+    };
+    getUrlParams();
+  }, [setSermonFilteredParameters]);
 
   return (
     <Layout title='Hill City Church: Sermons' meta={meta}>
@@ -162,22 +170,13 @@ const SermonsPage = ({ data }) => {
             All sermon audio is available for free on iTunes or your favorite podcast app.
             <br /> Simply subscribe to the Hill City Church Audio podcast.
             <div className='podcast-icons'>
-              <a
-                href='https://podcasts.apple.com/us/podcast/hill-city-church-rock-hill-sc/id1529110625'
-                target='_blank'
-                rel='noreferrer'>
+              <a href='https://podcasts.apple.com/us/podcast/hill-city-church-rock-hill-sc/id1529110625' target='_blank' rel='noreferrer'>
                 <i className='fa-solid fa-podcast'></i>
               </a>
-              <a
-                href='https://open.spotify.com/show/689D8k7FZnLQe1KZTJKEZh?si=73dccf8187964e6c'
-                target='_blank'
-                rel='noreferrer'>
+              <a href='https://open.spotify.com/show/689D8k7FZnLQe1KZTJKEZh?si=73dccf8187964e6c' target='_blank' rel='noreferrer'>
                 <i className='fab fa-spotify'></i>
               </a>
-              <a
-                href='https://www.stitcher.com/show/hill-city-church'
-                target='_blank'
-                rel='noreferrer'>
+              <a href='https://www.stitcher.com/show/hill-city-church' target='_blank' rel='noreferrer'>
                 <i className='fa-sharp fa-solid fa-chart-simple'></i>
               </a>
             </div>
@@ -185,14 +184,12 @@ const SermonsPage = ({ data }) => {
           <h1>Current Sermons</h1>
           <HeadingDivider />
           <div className='d-flex justify-content-center mt-4 mb-4 sermon-filter'>
-            {spinner ? (
-              <Spinner animation='border' style={{ marginTop: "25px", marginRight: "10px" }} />
-            ) : null}
+            {spinner ? <Spinner animation='border' style={{ marginTop: "25px", marginRight: "10px" }} /> : null}
             <div className='mb-4 me-2'>
               <label>Preacher</label>
               <select
                 className='form-select'
-                value={sermonFilteredParameters[0]}
+                value={sermonFilteredParameters.preacher}
                 onChange={(e) => {
                   {
                     setSermonFilteredParameters({
@@ -218,7 +215,7 @@ const SermonsPage = ({ data }) => {
               <label>Series</label>
               <select
                 className='form-select'
-                value={sermonFilteredParameters[1]}
+                value={sermonFilteredParameters.sermonSeries}
                 onChange={(e) => {
                   {
                     setSermonFilteredParameters({
@@ -244,7 +241,7 @@ const SermonsPage = ({ data }) => {
               <label>Bible Book</label>
               <select
                 className='form-select'
-                value={sermonFilteredParameters[2]}
+                value={sermonFilteredParameters.book}
                 onChange={(e) => {
                   {
                     setSermonFilteredParameters({
