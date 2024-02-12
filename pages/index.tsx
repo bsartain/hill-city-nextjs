@@ -6,7 +6,7 @@ import HeadingDivider from 'components/HeadingDivider';
 const ThankYou = ({ data }) => {
   const router = useRouter();
   return (
-    <Layout title="About Us" meta={data[0]}>
+    <Layout title="Thank You Rock Hill" meta={data[0]}>
       {!data
         ? 'Loading...'
         : data.map((item, index) => {
